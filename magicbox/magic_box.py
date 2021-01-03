@@ -39,20 +39,19 @@ class MagicBox():
         self._screen = MagicBoxScreen()
         self._screen.displayMessage("Welcome to magic box!")
 
-    def importModules(self):
-        pass
-
+        def importModules(self):
+            pass
 
 
 if __name__ == "__main__":
-   
+
     mb = MagicBox()
 
     try:
         while True:
-            
+
     except KeyboardInterrupt:
         pass
     finally:
-        GPIO.cleanup()
+    GPIO.cleanup()
 
