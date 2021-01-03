@@ -4,7 +4,6 @@
 -- Important Links --
 
 Inky phat
-    
 
 -- Application Notes --
 
@@ -13,7 +12,8 @@ Inky phat
 
 import RPi.GPIO as GPIO
 from typing import List
-from consts import *
+from magic_box_screen import MagicBoxScreen
+#from consts import *
 
 
 # Set gpio pin numbering to the gpio pin numbers on the raspberry pi
@@ -42,16 +42,13 @@ class MagicBox():
         def importModules(self):
             pass
 
-
 if __name__ == "__main__":
-
     mb = MagicBox()
-
     try:
         while True:
-
+            pass
     except KeyboardInterrupt:
         pass
     finally:
-    GPIO.cleanup()
+        GPIO.cleanup()
 

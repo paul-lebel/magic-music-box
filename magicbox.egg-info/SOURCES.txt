@@ -1,0 +1,7 @@
+README.md
+setup.py
+magicbox.egg-info/PKG-INFO
+magicbox.egg-info/SOURCES.txt
+magicbox.egg-info/dependency_links.txt
+magicbox.egg-info/requires.txt
+magicbox.egg-info/top_level.txt

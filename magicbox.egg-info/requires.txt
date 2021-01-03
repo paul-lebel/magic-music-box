@@ -1,0 +1,4 @@
+RPi.GPIO
+font_fredoka_one
+gTTS
+transitions

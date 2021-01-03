@@ -23,7 +23,6 @@ if __name__ == "__main__":
             draw.text((x, y), message, inkyphat.BLACK, font)
             inkyphat.set_image(img)
             inkyphat.show()
-            sleep(1)
 
     except KeyboardInterrupt:
         pass
