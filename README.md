@@ -1,4 +1,4 @@
-# fun-home-projects
+# magic-music-box
 A small platform for parent-configurable child entertainment and education.
 
 ## Features
@@ -9,17 +9,21 @@ A small platform for parent-configurable child entertainment and education.
 5. Computer control of the lighting system enhances the user experience for the child.
 6. Customization of the underlying PCB's silkscreen artwork is displayed through a transparent front panel.
 
-## Top level requirements
-RPi.GPIO, inky, gTTS, circuitpython, adafruit-circuitpython-neopixel
+## Requirements
+RPi.GPIO, inky, gTTS, circuitpython, adafruit-circuitpython-neopixel, font_fredoka_one
 
 ## Installation
 This module was developed on Raspberry Pi Zero W V1.1, but should be compatible with all newer RPi models running the latest version of Raspbian OS.
 1. Ensure the OS is updated, and also ensure that Python 3 is used by default. Following the instructions here takes care of this as well as circuitpython installation: https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
 2. Follow these instructions to install inky: https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-inky-phat
-3. Download / clone this repository
-4. Navigate to the base of the repository
-5. Install setuptools (__pip install setuptools__)
-6. Install module (__pip install .__)
+3. Add the following lines to /boot/config.txt:
+dtoverlay=audremap, enable_jack=on
+dtoverlay=audremap, pins_18_19=on
+dtoverlay=spi1-3cs
+4. Download / clone this repository
+5. Navigate to the base of the repository
+6. Install setuptools (__pip install setuptools__)
+7. Install module (__pip install .__)
 
 ## Updating Module from Repository
 1. Pull changes from remote repository
