@@ -14,7 +14,8 @@ setuptools.setup(
     install_requires=[
         'gTTS',
         'RPi.GPIO',
-        'font_fredoka_one'
+        'font_fredoka_one',
+        'transitions'
     ]
 
     #test_suite="tests",
