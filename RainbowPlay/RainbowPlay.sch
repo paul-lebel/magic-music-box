@@ -13,625 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 3350 2175 0    50   ~ 0
-TXD0
-Text Label 3350 2275 0    50   ~ 0
-RXD0
-Text Label 3525 3075 2    50   ~ 0
-SPI_CE1
 $Comp
-L RainbowPlay-rescue:MountingHole-Mechanical H1
-U 1 1 5C7C4C81
-P 12675 8675
-F 0 "H1" H 12775 8721 50  0000 L CNN
-F 1 "MountingHole" H 12775 8630 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12675 8675 50  0001 C CNN
-F 3 "~" H 12675 8675 50  0001 C CNN
-	1    12675 8675
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:MountingHole-Mechanical H2
-U 1 1 5C7C7FBC
-P 12675 8875
-F 0 "H2" H 12775 8921 50  0000 L CNN
-F 1 "MountingHole" H 12775 8830 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12675 8875 50  0001 C CNN
-F 3 "~" H 12675 8875 50  0001 C CNN
-	1    12675 8875
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:MountingHole-Mechanical H3
-U 1 1 5C7C8014
-P 12675 9075
-F 0 "H3" H 12775 9121 50  0000 L CNN
-F 1 "MountingHole" H 12775 9030 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12675 9075 50  0001 C CNN
-F 3 "~" H 12675 9075 50  0001 C CNN
-	1    12675 9075
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:MountingHole-Mechanical H4
-U 1 1 5C7C8030
-P 12675 9275
-F 0 "H4" H 12775 9321 50  0000 L CNN
-F 1 "MountingHole" H 12775 9230 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12675 9275 50  0001 C CNN
-F 3 "~" H 12675 9275 50  0001 C CNN
-	1    12675 9275
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:RN52-I_RM-dk_RF-Transceiver-Modules MOD1
-U 1 1 5FA96E11
-P 8250 6050
-F 0 "MOD1" H 8225 6850 60  0000 C CNN
-F 1 "RN52-I_RM" H 8350 6750 60  0000 C CNN
-F 2 "kicad-footprints:rn52-breakout" H 8450 6250 60  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en560775" H 8450 6350 60  0001 L CNN
-F 4 "RN52-I/RM-ND" H 8450 6450 60  0001 L CNN "Digi-Key_PN"
-F 5 "RN52-I/RM" H 8450 6550 60  0001 L CNN "MPN"
-F 6 "RF/IF and RFID" H 8450 6650 60  0001 L CNN "Category"
-F 7 "RF Transceiver Modules" H 8450 6750 60  0001 L CNN "Family"
-F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en560775" H 8450 6850 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/microchip-technology/RN52-I-RM/RN52-I-RM-ND/3884028" H 8450 6950 60  0001 L CNN "DK_Detail_Page"
-F 10 "RF TXRX MOD BLUETOOTH TRACE ANT" H 8450 7050 60  0001 L CNN "Description"
-F 11 "Microchip Technology" H 8450 7150 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8450 7250 60  0001 L CNN "Status"
-	1    8250 6050
-	1    0    0    -1  
-$EndComp
-Text Label 9750 6850 2    50   ~ 0
-SPK_R-
-Text Label 9750 6950 2    50   ~ 0
-SPK_L-
-Text Label 9750 7050 2    50   ~ 0
-SPK_R+
-Text Label 9750 7150 2    50   ~ 0
-SPK_L+
-Wire Wire Line
-	13275 1850 13275 1900
-Wire Wire Line
-	13125 1850 13275 1850
-Wire Wire Line
-	12725 1850 12825 1850
-Wire Wire Line
-	12725 2100 12725 1850
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0106
-U 1 1 5FAE1491
-P 13275 1900
-F 0 "#PWR0106" H 13275 1650 50  0001 C CNN
-F 1 "GNDA" H 13280 1727 50  0000 C CNN
-F 2 "" H 13275 1900 50  0001 C CNN
-F 3 "" H 13275 1900 50  0001 C CNN
-	1    13275 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:C-Device C3
-U 1 1 5FAE098B
-P 12975 1850
-F 0 "C3" V 13125 1825 50  0000 L CNN
-F 1 "0.1uF" V 12825 1750 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 13013 1700 50  0001 C CNN
-F 3 "~" H 12975 1850 50  0001 C CNN
-	1    12975 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12075 2500 12425 2500
-Text Label 12075 2500 0    50   ~ 0
-SPK_R-
-Wire Wire Line
-	12075 2300 12425 2300
-Text Label 12075 2300 0    50   ~ 0
-SPK_R+
-$Comp
-L RainbowPlay-rescue:R-Device R1
-U 1 1 5FABA865
-P 12725 2950
-F 0 "R1" H 12575 2875 50  0000 L CNN
-F 1 "1.2k" V 12725 2875 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 12655 2950 50  0001 C CNN
-F 3 "~" H 12725 2950 50  0001 C CNN
-	1    12725 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13175 2750 13175 2825
-Wire Wire Line
-	13175 2400 13350 2400
-Wire Wire Line
-	13175 2450 13175 2400
-$Comp
-L RainbowPlay-rescue:R-Device R3
-U 1 1 5FACF759
-P 13175 2600
-F 0 "R3" H 13245 2646 50  0000 L CNN
-F 1 "10R" H 13245 2555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13105 2600 50  0001 C CNN
-F 3 "~" H 13175 2600 50  0001 C CNN
-	1    13175 2600
-	1    0    0    -1  
-$EndComp
-Connection ~ 13175 2400
-Wire Wire Line
-	13025 2400 13175 2400
-Wire Wire Line
-	12400 2700 12400 2900
-Wire Wire Line
-	12625 2700 12400 2700
-Wire Wire Line
-	12825 2775 12825 2700
-Wire Wire Line
-	12875 2775 12825 2775
-Wire Wire Line
-	12875 3150 12875 3075
-Wire Wire Line
-	12725 3150 12875 3150
-Wire Wire Line
-	12725 3100 12725 3150
-Wire Wire Line
-	12725 2700 12725 2800
-$Comp
-L RainbowPlay-rescue:LM386-Amplifier_Audio U1
-U 1 1 5FA9A28F
-P 12725 2400
-F 0 "U1" H 12850 2550 50  0000 L CNN
-F 1 "LM386" H 12850 2300 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 12825 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 12925 2600 50  0001 C CNN
-	1    12725 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0108
-U 1 1 5FAB87D6
-P 12400 2900
-F 0 "#PWR0108" H 12400 2650 50  0001 C CNN
-F 1 "GNDA" H 12405 2727 50  0000 C CNN
-F 2 "" H 12400 2900 50  0001 C CNN
-F 3 "" H 12400 2900 50  0001 C CNN
-	1    12400 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:C-Device C1
-U 1 1 5FAAFD8C
-P 12875 2925
-F 0 "C1" H 12900 3025 50  0000 L CNN
-F 1 "10uF" H 12900 2800 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 12913 2775 50  0001 C CNN
-F 3 "~" H 12875 2925 50  0001 C CNN
-	1    12875 2925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13825 2775 13825 3050
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0109
-U 1 1 5FAA8342
-P 13825 3050
-F 0 "#PWR0109" H 13825 2800 50  0001 C CNN
-F 1 "GNDA" H 13830 2877 50  0000 C CNN
-F 2 "" H 13825 3050 50  0001 C CNN
-F 3 "" H 13825 3050 50  0001 C CNN
-	1    13825 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13175 3200 13175 3125
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0110
-U 1 1 5FAA6711
-P 13175 3200
-F 0 "#PWR0110" H 13175 2950 50  0001 C CNN
-F 1 "GNDA" H 13180 3027 50  0000 C CNN
-F 2 "" H 13175 3200 50  0001 C CNN
-F 3 "" H 13175 3200 50  0001 C CNN
-	1    13175 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:C-Device C5
-U 1 1 5FAA309A
-P 13175 2975
-F 0 "C5" H 13290 3021 50  0000 L CNN
-F 1 "0.05uF" H 13290 2930 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 13213 2825 50  0001 C CNN
-F 3 "~" H 13175 2975 50  0001 C CNN
-	1    13175 2975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13825 2400 13825 2675
-Wire Wire Line
-	13650 2400 13825 2400
-$Comp
-L RainbowPlay-rescue:CP1-Device C7
-U 1 1 5FA9FF9B
-P 13500 2400
-F 0 "C7" V 13752 2400 50  0000 C CNN
-F 1 "250uF" V 13661 2400 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 13500 2400 50  0001 C CNN
-F 3 "~" H 13500 2400 50  0001 C CNN
-	1    13500 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RainbowPlay-rescue:Speaker-Device LS1
-U 1 1 5FA9E6A2
-P 14025 2675
-F 0 "LS1" H 14195 2671 50  0000 L CNN
-F 1 "Speaker" H 14195 2580 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 14025 2475 50  0001 C CNN
-F 3 "~" H 14015 2625 50  0001 C CNN
-	1    14025 2675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13275 3725 13275 3775
-Wire Wire Line
-	13125 3725 13275 3725
-Wire Wire Line
-	12725 3725 12825 3725
-Wire Wire Line
-	12725 3975 12725 3725
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0111
-U 1 1 5FAFAA47
-P 13275 3775
-F 0 "#PWR0111" H 13275 3525 50  0001 C CNN
-F 1 "GNDA" H 13280 3602 50  0000 C CNN
-F 2 "" H 13275 3775 50  0001 C CNN
-F 3 "" H 13275 3775 50  0001 C CNN
-	1    13275 3775
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:C-Device C4
-U 1 1 5FAFAA51
-P 12975 3725
-F 0 "C4" V 13125 3700 50  0000 L CNN
-F 1 "0.1uF" V 12825 3625 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 13013 3575 50  0001 C CNN
-F 3 "~" H 12975 3725 50  0001 C CNN
-	1    12975 3725
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12075 4375 12425 4375
-Text Label 12075 4375 0    50   ~ 0
-SPK_L-
-Wire Wire Line
-	12075 4175 12425 4175
-Text Label 12075 4175 0    50   ~ 0
-SPK_L+
-$Comp
-L RainbowPlay-rescue:R-Device R2
-U 1 1 5FAFAA5F
-P 12725 4825
-F 0 "R2" H 12575 4750 50  0000 L CNN
-F 1 "1.2k" V 12725 4750 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 12655 4825 50  0001 C CNN
-F 3 "~" H 12725 4825 50  0001 C CNN
-	1    12725 4825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13175 4625 13175 4700
-Wire Wire Line
-	13175 4275 13350 4275
-Wire Wire Line
-	13175 4325 13175 4275
-$Comp
-L RainbowPlay-rescue:R-Device R4
-U 1 1 5FAFAA6C
-P 13175 4475
-F 0 "R4" H 13245 4521 50  0000 L CNN
-F 1 "10R" H 13245 4430 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13105 4475 50  0001 C CNN
-F 3 "~" H 13175 4475 50  0001 C CNN
-	1    13175 4475
-	1    0    0    -1  
-$EndComp
-Connection ~ 13175 4275
-Wire Wire Line
-	13025 4275 13175 4275
-Wire Wire Line
-	12400 4575 12400 4775
-Wire Wire Line
-	12625 4575 12400 4575
-Wire Wire Line
-	12825 4650 12825 4575
-Wire Wire Line
-	12875 4650 12825 4650
-Wire Wire Line
-	12875 5025 12875 4950
-Wire Wire Line
-	12725 5025 12875 5025
-Wire Wire Line
-	12725 4975 12725 5025
-Wire Wire Line
-	12725 4575 12725 4675
-$Comp
-L RainbowPlay-rescue:LM386-Amplifier_Audio U2
-U 1 1 5FAFAA8A
-P 12725 4275
-F 0 "U2" H 12850 4425 50  0000 L CNN
-F 1 "LM386" H 12850 4175 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 12825 4375 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 12925 4475 50  0001 C CNN
-	1    12725 4275
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0113
-U 1 1 5FAFAA94
-P 12400 4775
-F 0 "#PWR0113" H 12400 4525 50  0001 C CNN
-F 1 "GNDA" H 12405 4602 50  0000 C CNN
-F 2 "" H 12400 4775 50  0001 C CNN
-F 3 "" H 12400 4775 50  0001 C CNN
-	1    12400 4775
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:C-Device C2
-U 1 1 5FAFAA9E
-P 12875 4800
-F 0 "C2" H 12900 4900 50  0000 L CNN
-F 1 "10uF" H 12900 4675 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 12913 4650 50  0001 C CNN
-F 3 "~" H 12875 4800 50  0001 C CNN
-	1    12875 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13825 4650 13825 4925
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0114
-U 1 1 5FAFAAA9
-P 13825 4925
-F 0 "#PWR0114" H 13825 4675 50  0001 C CNN
-F 1 "GNDA" H 13830 4752 50  0000 C CNN
-F 2 "" H 13825 4925 50  0001 C CNN
-F 3 "" H 13825 4925 50  0001 C CNN
-	1    13825 4925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13175 5075 13175 5000
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0115
-U 1 1 5FAFAAB4
-P 13175 5075
-F 0 "#PWR0115" H 13175 4825 50  0001 C CNN
-F 1 "GNDA" H 13180 4902 50  0000 C CNN
-F 2 "" H 13175 5075 50  0001 C CNN
-F 3 "" H 13175 5075 50  0001 C CNN
-	1    13175 5075
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:C-Device C6
-U 1 1 5FAFAABE
-P 13175 4850
-F 0 "C6" H 13290 4896 50  0000 L CNN
-F 1 "0.05uF" H 13290 4805 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 13213 4700 50  0001 C CNN
-F 3 "~" H 13175 4850 50  0001 C CNN
-	1    13175 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13825 4275 13825 4550
-Wire Wire Line
-	13650 4275 13825 4275
-$Comp
-L RainbowPlay-rescue:CP1-Device C8
-U 1 1 5FAFAACA
-P 13500 4275
-F 0 "C8" V 13752 4275 50  0000 C CNN
-F 1 "250uF" V 13661 4275 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 13500 4275 50  0001 C CNN
-F 3 "~" H 13500 4275 50  0001 C CNN
-	1    13500 4275
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RainbowPlay-rescue:Speaker-Device LS2
-U 1 1 5FAFAAD4
-P 14025 4550
-F 0 "LS2" H 14195 4546 50  0000 L CNN
-F 1 "Speaker" H 14195 4455 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 14025 4350 50  0001 C CNN
-F 3 "~" H 14015 4500 50  0001 C CNN
-	1    14025 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:+3.3V-power #PWR0116
-U 1 1 5FB305AC
-P 7950 5200
-F 0 "#PWR0116" H 7950 5050 50  0001 C CNN
-F 1 "+3.3V" H 7965 5373 50  0000 C CNN
-F 2 "" H 7950 5200 50  0001 C CNN
-F 3 "" H 7950 5200 50  0001 C CNN
-	1    7950 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0117
-U 1 1 5FB35152
-P 8150 7800
-F 0 "#PWR0117" H 8150 7550 50  0001 C CNN
-F 1 "GNDA" H 8155 7627 50  0000 C CNN
-F 2 "" H 8150 7800 50  0001 C CNN
-F 3 "" H 8150 7800 50  0001 C CNN
-	1    8150 7800
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:GND-power #PWR0118
-U 1 1 5FB674C5
-P 2200 7675
-F 0 "#PWR0118" H 2200 7425 50  0001 C CNN
-F 1 "GND" H 2205 7502 50  0001 C CNN
-F 2 "" H 2200 7675 50  0001 C CNN
-F 3 "" H 2200 7675 50  0001 C CNN
-	1    2200 7675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 7675 2200 7525
-Wire Wire Line
-	2200 7525 2075 7525
-Wire Wire Line
-	2075 7050 2200 7050
-Wire Wire Line
-	2200 7050 2200 7525
-Connection ~ 2200 7525
-Wire Wire Line
-	2075 6575 2200 6575
-Wire Wire Line
-	2200 6575 2200 7050
-Connection ~ 2200 7050
-Wire Wire Line
-	2075 6100 2200 6100
-Connection ~ 2200 6575
-Text Label 6900 7350 0    50   ~ 0
-VOL_DWN
-Text Label 6900 7250 0    50   ~ 0
-PREV_TRK
-Text Label 6900 7050 0    50   ~ 0
-NXT_TRK
-Text Label 6900 7150 0    50   ~ 0
-PLY_PS
-Text Label 6900 6950 0    50   ~ 0
-VOL_UP
-Wire Wire Line
-	2075 5625 2200 5625
-Wire Wire Line
-	2200 5625 2200 6100
-Connection ~ 2200 6100
-Wire Wire Line
-	2200 6100 2200 6575
-Text Label 1200 6100 0    50   ~ 0
-VOL_DWN
-Wire Wire Line
-	1200 6100 1675 6100
-Text Label 1200 6575 0    50   ~ 0
-PREV_TRK
-Text Label 1200 7050 0    50   ~ 0
-NXT_TRK
-Wire Wire Line
-	1200 7050 1675 7050
-Wire Wire Line
-	1200 6575 1675 6575
-Text Label 1200 7525 0    50   ~ 0
-PLY_PS
-Wire Wire Line
-	1200 7525 1675 7525
-Text Label 1200 5625 0    50   ~ 0
-VOL_UP
-Wire Wire Line
-	1200 5625 1675 5625
-NoConn ~ 1675 5425
-NoConn ~ 2075 5425
-NoConn ~ 2075 5900
-NoConn ~ 1675 5900
-NoConn ~ 1675 6375
-NoConn ~ 2075 6375
-NoConn ~ 2075 6850
-NoConn ~ 1675 6850
-NoConn ~ 1675 7325
-NoConn ~ 2075 7325
-NoConn ~ 7350 7450
-$Comp
-L dk_Barrel-Power-Connectors:PJ-102A J2
-U 1 1 5FBC0583
-P 14400 8775
-F 0 "J2" H 14333 9000 50  0000 C CNN
-F 1 "PJ-102A" H 14333 8909 50  0000 C CNN
-F 2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-102A" H 14600 8975 60  0001 L CNN
-F 3 "https://www.cui.com/product/resource/digikeypdf/pj-102a.pdf" H 14600 9075 60  0001 L CNN
-F 4 "CP-102A-ND" H 14600 9175 60  0001 L CNN "Digi-Key_PN"
-F 5 "PJ-102A" H 14600 9275 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 14600 9375 60  0001 L CNN "Category"
-F 7 "Barrel - Power Connectors" H 14600 9475 60  0001 L CNN "Family"
-F 8 "https://www.cui.com/product/resource/digikeypdf/pj-102a.pdf" H 14600 9575 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cui-inc/PJ-102A/CP-102A-ND/275425" H 14600 9675 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN PWR JACK 2X5.5MM SOLDER" H 14600 9775 60  0001 L CNN "Description"
-F 11 "CUI Inc." H 14600 9875 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 14600 9975 60  0001 L CNN "Status"
-	1    14400 8775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 8775 14500 8775
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR0104
-U 1 1 5FBC8E68
-P 14700 9225
-F 0 "#PWR0104" H 14700 8975 50  0001 C CNN
-F 1 "GNDA" H 14705 9052 50  0000 C CNN
-F 2 "" H 14700 9225 50  0001 C CNN
-F 3 "" H 14700 9225 50  0001 C CNN
-	1    14700 9225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 8975 14500 8975
-NoConn ~ 14500 8875
-$Comp
-L RainbowPlay-rescue:PWR_FLAG-power #FLG0104
-U 1 1 5FBD3FE4
-P 14850 8625
-F 0 "#FLG0104" H 14850 8700 50  0001 C CNN
-F 1 "PWR_FLAG" H 14850 8799 50  0000 C CNN
-F 2 "" H 14850 8625 50  0001 C CNN
-F 3 "~" H 14850 8625 50  0001 C CNN
-	1    14850 8625
-	0    1    1    0   
-$EndComp
-$Comp
-L RainbowPlay-rescue:PWR_FLAG-power #FLG0105
-U 1 1 5FBDA38B
-P 14850 9125
-F 0 "#FLG0105" H 14850 9200 50  0001 C CNN
-F 1 "PWR_FLAG" H 14850 9299 50  0000 C CNN
-F 2 "" H 14850 9125 50  0001 C CNN
-F 3 "~" H 14850 9125 50  0001 C CNN
-	1    14850 9125
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14700 8975 14700 9125
-Wire Wire Line
-	14850 8625 14700 8625
-Connection ~ 14700 8625
-Wire Wire Line
-	14700 8625 14700 8775
-Wire Wire Line
-	14850 9125 14700 9125
-Connection ~ 14700 9125
-Wire Wire Line
-	14700 9125 14700 9225
-Text Label 1800 2775 0    50   ~ 0
-SPI_MOSI
-Text Label 1800 2875 0    50   ~ 0
-SPI_MISO
-Text Label 1800 2975 0    50   ~ 0
-SPI_SCLK
-$Comp
-L RainbowPlay-rescue:+3.3V-power #PWR0103
+L RainbowPlay-rescue:+3.3V-power #PWR01
 U 1 1 5C777AB0
 P 2100 1775
-F 0 "#PWR0103" H 2100 1625 50  0001 C CNN
+F 0 "#PWR01" H 2100 1625 50  0001 C CNN
 F 1 "+3.3V" H 2115 1948 50  0000 C CNN
 F 2 "" H 2100 1775 50  0001 C CNN
 F 3 "" H 2100 1775 50  0001 C CNN
@@ -639,10 +25,10 @@ F 3 "" H 2100 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RainbowPlay-rescue:PWR_FLAG-power #FLG0101
+L RainbowPlay-rescue:PWR_FLAG-power #FLG01
 U 1 1 5C77824A
 P 1750 1725
-F 0 "#FLG0101" H 1750 1800 50  0001 C CNN
+F 0 "#FLG01" H 1750 1800 50  0001 C CNN
 F 1 "PWR_FLAG" H 1750 1899 50  0000 C CNN
 F 2 "" H 1750 1725 50  0001 C CNN
 F 3 "~" H 1750 1725 50  0001 C CNN
@@ -650,14 +36,14 @@ F 3 "~" H 1750 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RainbowPlay-rescue:GND-power #PWR0101
+L RainbowPlay-rescue:GND-power #PWR03
 U 1 1 5C777805
-P 2250 4025
-F 0 "#PWR0101" H 2250 3775 50  0001 C CNN
-F 1 "GND" H 2255 3852 50  0001 C CNN
-F 2 "" H 2250 4025 50  0001 C CNN
-F 3 "" H 2250 4025 50  0001 C CNN
-	1    2250 4025
+P 3050 2850
+F 0 "#PWR03" H 3050 2600 50  0001 C CNN
+F 1 "GND" H 3055 2677 50  0001 C CNN
+F 2 "" H 3050 2850 50  0001 C CNN
+F 3 "" H 3050 2850 50  0001 C CNN
+	1    3050 2850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -681,722 +67,106 @@ Connection ~ 2100 1875
 Wire Wire Line
 	2100 1875 2400 1875
 Wire Wire Line
-	2250 3775 2400 3775
-Wire Wire Line
-	2250 4025 2250 3775
-Wire Wire Line
 	2900 1875 3200 1875
 Connection ~ 3200 1875
 Wire Wire Line
 	2900 1975 3200 1975
 Wire Wire Line
 	3200 1975 3200 1875
-Wire Wire Line
-	6900 6950 7350 6950
-Wire Wire Line
-	6900 7350 7350 7350
-Wire Wire Line
-	6900 7250 7350 7250
-Wire Wire Line
-	6900 7150 7350 7150
-Wire Wire Line
-	6900 7050 7350 7050
-Wire Wire Line
-	8150 7800 8150 7650
-Wire Wire Line
-	9750 7150 9150 7150
-Wire Wire Line
-	9750 7050 9150 7050
-Wire Wire Line
-	9750 6950 9150 6950
-Wire Wire Line
-	9750 6850 9150 6850
-Wire Wire Line
-	7950 5350 7950 5200
 NoConn ~ 2400 2275
 NoConn ~ 2400 3075
 NoConn ~ 2900 3475
 NoConn ~ 2900 2075
 NoConn ~ 2900 2475
-NoConn ~ 2900 2775
 NoConn ~ 2900 3275
-Wire Wire Line
-	2900 2175 3350 2175
-Wire Wire Line
-	3350 2275 2900 2275
-Text Label 6925 5650 0    50   ~ 0
-TXD0
-Wire Wire Line
-	6925 5650 7350 5650
-Text Label 9750 6750 2    50   ~ 0
-RXD0
 $Comp
-L RainbowPlay-rescue:+3.3V-power #PWR0120
-U 1 1 5FE2296F
-P 6825 5350
-F 0 "#PWR0120" H 6825 5200 50  0001 C CNN
-F 1 "+3.3V" H 6840 5523 50  0000 C CNN
-F 2 "" H 6825 5350 50  0001 C CNN
-F 3 "" H 6825 5350 50  0001 C CNN
-	1    6825 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6825 5350 6825 5750
-Wire Wire Line
-	6825 5750 7350 5750
-$Comp
-L RainbowPlay-rescue:GND-power #PWR0121
-U 1 1 5FE3E346
-P 3625 7700
-F 0 "#PWR0121" H 3625 7450 50  0001 C CNN
-F 1 "GND" H 3630 7527 50  0001 C CNN
-F 2 "" H 3625 7700 50  0001 C CNN
-F 3 "" H 3625 7700 50  0001 C CNN
-	1    3625 7700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3625 7700 3625 7550
-Wire Wire Line
-	3625 7550 3500 7550
-Wire Wire Line
-	3500 7075 3625 7075
-Wire Wire Line
-	3625 7075 3625 7550
-Connection ~ 3625 7550
-Wire Wire Line
-	3500 6600 3625 6600
-Wire Wire Line
-	3625 6600 3625 7075
-Connection ~ 3625 7075
-Wire Wire Line
-	3500 6125 3625 6125
-Connection ~ 3625 6600
-Wire Wire Line
-	3500 5650 3625 5650
-Wire Wire Line
-	3625 5650 3625 6125
-Connection ~ 3625 6125
-Wire Wire Line
-	3625 6125 3625 6600
-Text Label 2625 6125 0    50   ~ 0
-BTN_B
-Wire Wire Line
-	2625 6125 3100 6125
-Text Label 2625 6600 0    50   ~ 0
-BTN_C
-Text Label 2625 7075 0    50   ~ 0
-BTN_D
-Wire Wire Line
-	2625 7075 3100 7075
-Wire Wire Line
-	2625 6600 3100 6600
-Text Label 2625 7550 0    50   ~ 0
-BTN_E
-Wire Wire Line
-	2625 7550 3100 7550
-Text Label 2625 5650 0    50   ~ 0
-BTN_A
-Wire Wire Line
-	2625 5650 3100 5650
-NoConn ~ 3100 5450
-NoConn ~ 3500 5450
-NoConn ~ 3500 5925
-NoConn ~ 3100 5925
-NoConn ~ 3100 6400
-NoConn ~ 3500 6400
-NoConn ~ 3500 6875
-NoConn ~ 3100 6875
-NoConn ~ 3100 7350
-NoConn ~ 3500 7350
-$Comp
-L dk_Tactile-Switches:1825910-6 S1
-U 1 1 5FC561E5
-P 1875 5525
-F 0 "S1" H 1875 5872 60  0000 C CNN
-F 1 "1825910-6" H 1875 5766 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2075 5725 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 5825 60  0001 L CNN
-F 4 "450-1650-ND" H 2075 5925 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 2075 6025 60  0001 L CNN "MPN"
-F 6 "Switches" H 2075 6125 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 2075 6225 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 6325 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 2075 6425 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 2075 6525 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 2075 6625 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2075 6725 60  0001 L CNN "Status"
-	1    1875 5525
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S2
-U 1 1 5FC57F26
-P 1875 6000
-F 0 "S2" H 1875 6347 60  0000 C CNN
-F 1 "1825910-6" H 1875 6241 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2075 6200 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 6300 60  0001 L CNN
-F 4 "450-1650-ND" H 2075 6400 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 2075 6500 60  0001 L CNN "MPN"
-F 6 "Switches" H 2075 6600 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 2075 6700 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 6800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 2075 6900 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 2075 7000 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 2075 7100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2075 7200 60  0001 L CNN "Status"
-	1    1875 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S3
-U 1 1 5FC5896B
-P 1875 6475
-F 0 "S3" H 1875 6822 60  0000 C CNN
-F 1 "1825910-6" H 1875 6716 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2075 6675 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 6775 60  0001 L CNN
-F 4 "450-1650-ND" H 2075 6875 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 2075 6975 60  0001 L CNN "MPN"
-F 6 "Switches" H 2075 7075 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 2075 7175 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 7275 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 2075 7375 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 2075 7475 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 2075 7575 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2075 7675 60  0001 L CNN "Status"
-	1    1875 6475
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S4
-U 1 1 5FC5950E
-P 1875 6950
-F 0 "S4" H 1875 7297 60  0000 C CNN
-F 1 "1825910-6" H 1875 7191 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2075 7150 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 7250 60  0001 L CNN
-F 4 "450-1650-ND" H 2075 7350 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 2075 7450 60  0001 L CNN "MPN"
-F 6 "Switches" H 2075 7550 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 2075 7650 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 7750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 2075 7850 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 2075 7950 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 2075 8050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2075 8150 60  0001 L CNN "Status"
-	1    1875 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S5
-U 1 1 5FC5A115
-P 1875 7425
-F 0 "S5" H 1875 7772 60  0000 C CNN
-F 1 "1825910-6" H 1875 7666 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 2075 7625 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 7725 60  0001 L CNN
-F 4 "450-1650-ND" H 2075 7825 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 2075 7925 60  0001 L CNN "MPN"
-F 6 "Switches" H 2075 8025 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 2075 8125 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 8225 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 2075 8325 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 2075 8425 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 2075 8525 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2075 8625 60  0001 L CNN "Status"
-	1    1875 7425
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S6
-U 1 1 5FC5A8D0
-P 3300 5550
-F 0 "S6" H 3300 5897 60  0000 C CNN
-F 1 "1825910-6" H 3300 5791 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 3500 5750 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 5850 60  0001 L CNN
-F 4 "450-1650-ND" H 3500 5950 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 3500 6050 60  0001 L CNN "MPN"
-F 6 "Switches" H 3500 6150 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 3500 6250 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 6350 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 3500 6450 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 3500 6550 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 3500 6650 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3500 6750 60  0001 L CNN "Status"
-	1    3300 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S7
-U 1 1 5FC5CE25
-P 3300 6025
-F 0 "S7" H 3300 6372 60  0000 C CNN
-F 1 "1825910-6" H 3300 6266 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 3500 6225 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 6325 60  0001 L CNN
-F 4 "450-1650-ND" H 3500 6425 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 3500 6525 60  0001 L CNN "MPN"
-F 6 "Switches" H 3500 6625 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 3500 6725 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 6825 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 3500 6925 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 3500 7025 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 3500 7125 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3500 7225 60  0001 L CNN "Status"
-	1    3300 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S8
-U 1 1 5FC5D7A2
-P 3300 6500
-F 0 "S8" H 3300 6847 60  0000 C CNN
-F 1 "1825910-6" H 3300 6741 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 3500 6700 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 6800 60  0001 L CNN
-F 4 "450-1650-ND" H 3500 6900 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 3500 7000 60  0001 L CNN "MPN"
-F 6 "Switches" H 3500 7100 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 3500 7200 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 7300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 3500 7400 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 3500 7500 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 3500 7600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3500 7700 60  0001 L CNN "Status"
-	1    3300 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S9
-U 1 1 5FC5E471
-P 3300 6975
-F 0 "S9" H 3300 7322 60  0000 C CNN
-F 1 "1825910-6" H 3300 7216 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 3500 7175 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 7275 60  0001 L CNN
-F 4 "450-1650-ND" H 3500 7375 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 3500 7475 60  0001 L CNN "MPN"
-F 6 "Switches" H 3500 7575 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 3500 7675 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 7775 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 3500 7875 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 3500 7975 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 3500 8075 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3500 8175 60  0001 L CNN "Status"
-	1    3300 6975
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Tactile-Switches:1825910-6 S10
-U 1 1 5FC5ECC2
-P 3300 7450
-F 0 "S10" H 3300 7797 60  0000 C CNN
-F 1 "1825910-6" H 3300 7691 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 3500 7650 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 7750 60  0001 L CNN
-F 4 "450-1650-ND" H 3500 7850 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 3500 7950 60  0001 L CNN "MPN"
-F 6 "Switches" H 3500 8050 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 3500 8150 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 3500 8250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 3500 8350 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 3500 8450 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 3500 8550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3500 8650 60  0001 L CNN "Status"
-	1    3300 7450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7850 7650
-NoConn ~ 7950 7650
-NoConn ~ 8050 7650
-NoConn ~ 8250 7650
-NoConn ~ 8350 7650
-NoConn ~ 8450 7650
-NoConn ~ 8550 7650
-NoConn ~ 8650 7650
-NoConn ~ 8750 7650
-$Comp
-L RainbowPlay-rescue:GND-power #PWR0122
-U 1 1 5FCA99B9
-P 8850 7825
-F 0 "#PWR0122" H 8850 7575 50  0001 C CNN
-F 1 "GND" H 8855 7652 50  0001 C CNN
-F 2 "" H 8850 7825 50  0001 C CNN
-F 3 "" H 8850 7825 50  0001 C CNN
-	1    8850 7825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 7825 8850 7650
-$Comp
-L Device:R R6
+L Device:R R2
 U 1 1 5FDB60E9
-P 6975 2575
-F 0 "R6" V 6768 2575 50  0000 C CNN
-F 1 "5R" V 6859 2575 50  0000 C CNN
-F 2 "" V 6905 2575 50  0001 C CNN
-F 3 "~" H 6975 2575 50  0001 C CNN
-	1    6975 2575
+P 5450 2375
+F 0 "R2" V 5243 2375 50  0000 C CNN
+F 1 "5R" V 5334 2375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5380 2375 50  0001 C CNN
+F 3 "~" H 5450 2375 50  0001 C CNN
+	1    5450 2375
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:L L2
 U 1 1 5FDB72AD
-P 7275 2575
-F 0 "L2" V 7465 2575 50  0000 C CNN
-F 1 "10uH" V 7374 2575 50  0000 C CNN
-F 2 "" H 7275 2575 50  0001 C CNN
-F 3 "~" H 7275 2575 50  0001 C CNN
-	1    7275 2575
+P 5800 2375
+F 0 "L2" V 5990 2375 50  0000 C CNN
+F 1 "10uH" V 5899 2375 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 5800 2375 50  0001 C CNN
+F 3 "~" H 5800 2375 50  0001 C CNN
+F 4 "ASMCI-0603-100M-T" V 5800 2375 50  0001 C CNN "Part number"
+F 5 "Digikey" V 5800 2375 50  0001 C CNN "Vendor"
+F 6 "$0.22" V 5800 2375 50  0001 C CNN "Price"
+	1    5800 2375
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C10
+L Device:C C2
 U 1 1 5FDB83F3
-P 7475 2800
-F 0 "C10" H 7590 2846 50  0000 L CNN
-F 1 "1.5uF" H 7590 2755 50  0000 L CNN
-F 2 "" H 7513 2650 50  0001 C CNN
-F 3 "~" H 7475 2800 50  0001 C CNN
-	1    7475 2800
+P 6150 2550
+F 0 "C2" H 5975 2625 50  0000 L CNN
+F 1 "1.5uF" H 5925 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 2400 50  0001 C CNN
+F 3 "~" H 6150 2550 50  0001 C CNN
+	1    6150 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7425 2575 7475 2575
-Wire Wire Line
-	7475 2575 7475 2650
-Text Label 6300 2575 0    50   ~ 0
+Text Label 4725 2375 0    50   ~ 0
 PWM_AUDIO_L
-Wire Wire Line
-	6300 2575 6825 2575
-Text Label 9825 2500 2    50   ~ 0
-MIC_L+
-Text Label 9825 2650 2    50   ~ 0
-MIC_R+
-Text Label 9825 2825 2    50   ~ 0
-MIC_L-
-Text Label 9825 3025 2    50   ~ 0
-MIC_R-
+Text Label 7000 2375 2    50   ~ 0
+AUD_L+
+Text Label 7000 2750 2    50   ~ 0
+AUD_R+
 $Comp
-L Device:C C13
-U 1 1 5FE1C7F7
-P 9125 2325
-F 0 "C13" H 9240 2371 50  0000 L CNN
-F 1 "47nF" H 9240 2280 50  0000 L CNN
-F 2 "" H 9163 2175 50  0001 C CNN
-F 3 "~" H 9125 2325 50  0001 C CNN
-	1    9125 2325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5FE1D19A
-P 8750 2325
-F 0 "C12" H 8865 2371 50  0000 L CNN
-F 1 "47nF" H 8865 2280 50  0000 L CNN
-F 2 "" H 8788 2175 50  0001 C CNN
-F 3 "~" H 8750 2325 50  0001 C CNN
-	1    8750 2325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5FE1D497
-P 8100 2325
-F 0 "R8" H 8030 2279 50  0000 R CNN
-F 1 "2.2k" H 8030 2370 50  0000 R CNN
-F 2 "" V 8030 2325 50  0001 C CNN
-F 3 "~" H 8100 2325 50  0001 C CNN
-	1    8100 2325
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5FE1DC07
-P 7850 2325
-F 0 "R7" H 7920 2279 50  0000 L CNN
-F 1 "2.2k" H 7920 2370 50  0000 L CNN
-F 2 "" V 7780 2325 50  0001 C CNN
-F 3 "~" H 7850 2325 50  0001 C CNN
-	1    7850 2325
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9125 2175 8750 2175
-Wire Wire Line
-	8100 2175 7850 2175
-Wire Wire Line
-	9825 2500 9125 2500
-Wire Wire Line
-	9125 2500 9125 2475
-Wire Wire Line
-	9825 2650 8750 2650
-Wire Wire Line
-	8750 2650 8750 2475
-$Comp
-L Device:C C11
-U 1 1 5FE6900F
-P 8425 2325
-F 0 "C11" H 8540 2371 50  0000 L CNN
-F 1 "1uF" H 8540 2280 50  0000 L CNN
-F 2 "" H 8463 2175 50  0001 C CNN
-F 3 "~" H 8425 2325 50  0001 C CNN
-	1    8425 2325
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR03
-U 1 1 5FE694D8
-P 8425 2525
-F 0 "#PWR03" H 8425 2275 50  0001 C CNN
-F 1 "GNDA" H 8430 2352 50  0000 C CNN
-F 2 "" H 8425 2525 50  0001 C CNN
-F 3 "" H 8425 2525 50  0001 C CNN
-	1    8425 2525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8425 2525 8425 2475
-Wire Wire Line
-	8100 2175 8425 2175
-Connection ~ 8100 2175
-Wire Wire Line
-	8425 2175 8750 2175
-Connection ~ 8425 2175
-Connection ~ 8750 2175
-$Comp
-L Device:C C14
-U 1 1 5FE811D2
-P 9350 2825
-F 0 "C14" V 9100 2825 50  0000 C CNN
-F 1 "47nF" V 9200 2825 50  0000 C CNN
-F 2 "" H 9388 2675 50  0001 C CNN
-F 3 "~" H 9350 2825 50  0001 C CNN
-	1    9350 2825
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 5FE81A0F
-P 9350 3025
-F 0 "C15" V 9510 3025 50  0000 C CNN
-F 1 "47nF" V 9601 3025 50  0000 C CNN
-F 2 "" H 9388 2875 50  0001 C CNN
-F 3 "~" H 9350 3025 50  0001 C CNN
-	1    9350 3025
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9825 2825 9500 2825
-Wire Wire Line
-	9500 3025 9825 3025
-Wire Wire Line
-	9200 2825 8100 2825
-Wire Wire Line
-	8100 2825 8100 2575
-Wire Wire Line
-	7850 2475 7850 2950
-Wire Wire Line
-	7850 3025 9200 3025
-Text Label 7375 2175 0    50   ~ 0
-MIC_BIAS
-Wire Wire Line
-	7375 2175 7850 2175
-Connection ~ 7850 2175
-$Comp
-L Device:R R5
+L Device:R R1
 U 1 1 5FF2D5F3
-P 6625 2950
-F 0 "R5" V 6418 2950 50  0000 C CNN
-F 1 "5R" V 6509 2950 50  0000 C CNN
-F 2 "" V 6555 2950 50  0001 C CNN
-F 3 "~" H 6625 2950 50  0001 C CNN
-	1    6625 2950
+P 5450 2750
+F 0 "R1" V 5243 2750 50  0000 C CNN
+F 1 "5R" V 5334 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5380 2750 50  0001 C CNN
+F 3 "~" H 5450 2750 50  0001 C CNN
+	1    5450 2750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:L L1
-U 1 1 5FF2D609
-P 6975 2950
-F 0 "L1" V 7165 2950 50  0000 C CNN
-F 1 "10uH" V 7074 2950 50  0000 C CNN
-F 2 "" H 6975 2950 50  0001 C CNN
-F 3 "~" H 6975 2950 50  0001 C CNN
-	1    6975 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C9
+L Device:C C1
 U 1 1 5FF2D625
-P 7325 3150
-F 0 "C9" H 7211 3196 50  0000 R CNN
-F 1 "1.5uF" H 7211 3105 50  0000 R CNN
-F 2 "" H 7363 3000 50  0001 C CNN
-F 3 "~" H 7325 3150 50  0001 C CNN
-	1    7325 3150
+P 6150 3125
+F 0 "C1" H 6036 3171 50  0000 R CNN
+F 1 "1.5uF" H 6036 3080 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 2975 50  0001 C CNN
+F 3 "~" H 6150 3125 50  0001 C CNN
+	1    6150 3125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6775 2950 6825 2950
+	5600 2750 5650 2750
 Wire Wire Line
-	7125 2950 7325 2950
+	5950 2750 6150 2750
 Wire Wire Line
-	7325 2950 7325 3000
-$Comp
-L RainbowPlay-rescue:GNDA-power #PWR02
-U 1 1 5FF2D640
-P 7325 3425
-F 0 "#PWR02" H 7325 3175 50  0001 C CNN
-F 1 "GNDA" H 7330 3252 50  0000 C CNN
-F 2 "" H 7325 3425 50  0001 C CNN
-F 3 "" H 7325 3425 50  0001 C CNN
-	1    7325 3425
-	1    0    0    -1  
-$EndComp
-Text Label 5900 2950 0    50   ~ 0
+	6150 2750 6150 2900
+Text Label 4725 2750 0    50   ~ 0
 PWM_AUDIO_R
 Wire Wire Line
-	5900 2950 6475 2950
-Wire Wire Line
-	7475 2575 8100 2575
-Connection ~ 7475 2575
-Connection ~ 8100 2575
-Wire Wire Line
-	8100 2575 8100 2475
-Wire Wire Line
-	7325 2950 7475 2950
-Connection ~ 7325 2950
-Connection ~ 7850 2950
-Wire Wire Line
-	7850 2950 7850 3025
-Connection ~ 7475 2950
-Wire Wire Line
-	7475 2950 7850 2950
-Text Label 6950 6250 0    50   ~ 0
-MIC_L+
-Text Label 6950 6350 0    50   ~ 0
-MIC_R+
-Text Label 6950 6450 0    50   ~ 0
-MIC_L-
-Text Label 6950 6550 0    50   ~ 0
-MIC_R-
-Wire Wire Line
-	6950 6550 7350 6550
-Wire Wire Line
-	7350 6250 6950 6250
-Wire Wire Line
-	7350 6350 6950 6350
-Wire Wire Line
-	7350 6450 6950 6450
-NoConn ~ 9150 6450
-NoConn ~ 9150 6350
-Text Label 9750 6550 2    50   ~ 0
-MIC_BIAS
-Wire Wire Line
-	9750 6550 9150 6550
-NoConn ~ 7350 5850
-Wire Wire Line
-	9750 6750 9150 6750
-NoConn ~ 9150 6650
-NoConn ~ 9150 5550
-NoConn ~ 9150 5650
-NoConn ~ 9150 5950
-NoConn ~ 9150 6050
-NoConn ~ 9150 6150
-NoConn ~ 9150 5850
-NoConn ~ 9150 5750
-$Comp
-L dk_Tactile-Switches:1825910-6 S11
-U 1 1 6032D125
-P 6425 6750
-F 0 "S11" H 6425 7097 60  0000 C CNN
-F 1 "1825910-6" H 6425 6991 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 6625 6950 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 6625 7050 60  0001 L CNN
-F 4 "450-1650-ND" H 6625 7150 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 6625 7250 60  0001 L CNN "MPN"
-F 6 "Switches" H 6625 7350 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 6625 7450 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 6625 7550 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 6625 7650 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 6625 7750 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 6625 7850 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6625 7950 60  0001 L CNN "Status"
-	1    6425 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:GND-power #PWR01
-U 1 1 6032F9FB
-P 6125 6950
-F 0 "#PWR01" H 6125 6700 50  0001 C CNN
-F 1 "GND" H 6130 6777 50  0001 C CNN
-F 2 "" H 6125 6950 50  0001 C CNN
-F 3 "" H 6125 6950 50  0001 C CNN
-	1    6125 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6125 6950 6125 6850
-Wire Wire Line
-	6125 6850 6225 6850
-Wire Wire Line
-	6625 6850 7350 6850
-NoConn ~ 6625 6650
-NoConn ~ 6225 6650
-Text Notes 6925 4750 0    150  ~ 0
-Bluetooth audio module
-Text Notes 12600 8300 0    150  ~ 0
-Mounting\nHoles
+	4725 2750 5300 2750
+Connection ~ 6150 2750
 Text Notes 1350 1250 0    150  ~ 0
 Raspberry Pi Zero W
-Text Notes 1400 4925 0    150  ~ 0
-User interface buttons
-Text Notes 6775 1775 0    150  ~ 0
-Filtering for PWM audio\ninto MIC input
-Text Notes 12200 1300 0    150  ~ 0
-Audio amplifiers
-Text Notes 6150 6325 0    50   ~ 0
-Factory reset
-NoConn ~ 7350 5550
-NoConn ~ 2900 3775
-NoConn ~ 2900 3675
-NoConn ~ 2900 3575
+Text Notes 4700 1400 0    150  ~ 0
+Filtering for PWM audio\ninto amp input
+Text Notes 8100 1325 0    150  ~ 0
+Audio amplifier (Class D stereo)
 NoConn ~ 2900 3175
-NoConn ~ 2400 3575
-NoConn ~ 2400 3675
-Text Label 9750 6250 2    50   ~ 0
-SPI_MISO
-Wire Wire Line
-	9750 6250 9150 6250
-Text Label 6950 6050 0    50   ~ 0
-SPI_SCLK
-Wire Wire Line
-	6950 6050 7350 6050
-Text Label 6950 6150 0    50   ~ 0
-SPI_MOSI
-Wire Wire Line
-	6950 6150 7350 6150
-Wire Wire Line
-	1800 2775 2400 2775
-Wire Wire Line
-	1800 2975 2400 2975
-Wire Wire Line
-	1800 2875 2400 2875
 NoConn ~ 2900 2875
-Text Label 6950 5950 0    50   ~ 0
-SPI_CE1
-Wire Wire Line
-	6950 5950 7350 5950
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR04
 U 1 1 6062EFF3
 P 3200 1775
-F 0 "#PWR?" H 3200 1625 50  0001 C CNN
+F 0 "#PWR04" H 3200 1625 50  0001 C CNN
 F 1 "+5V" H 3215 1948 50  0000 C CNN
 F 2 "" H 3200 1775 50  0001 C CNN
 F 3 "" H 3200 1775 50  0001 C CNN
@@ -1405,97 +175,26 @@ F 3 "" H 3200 1775 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 1775 3200 1875
-Wire Wire Line
-	12625 1850 12625 2100
-Wire Wire Line
-	12625 3725 12625 3975
-Text Notes 14325 8075 0    150  ~ 0
-Power In
-Wire Wire Line
-	14700 8425 14700 8625
 NoConn ~ 2400 2375
-Text Label 1800 3175 0    50   ~ 0
+Text Label 3725 2575 2    50   ~ 0
 BTN_A
-Text Label 1800 3275 0    50   ~ 0
-BTN_B
-Text Label 1800 3375 0    50   ~ 0
+Text Label 1800 3175 0    50   ~ 0
 BTN_C
-Text Label 3525 2575 2    50   ~ 0
+Text Label 1800 3275 0    50   ~ 0
 BTN_D
-Text Label 3525 2675 2    50   ~ 0
+Text Label 1800 3375 0    50   ~ 0
 BTN_E
 Wire Wire Line
-	3525 2675 2900 2675
-Wire Wire Line
-	3525 2575 2900 2575
-Wire Wire Line
-	7325 3300 7325 3425
-$Comp
-L power:+5V #PWR?
-U 1 1 5FF5476E
-P 12625 1850
-F 0 "#PWR?" H 12625 1700 50  0001 C CNN
-F 1 "+5V" H 12640 2023 50  0000 C CNN
-F 2 "" H 12625 1850 50  0001 C CNN
-F 3 "" H 12625 1850 50  0001 C CNN
-	1    12625 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5FF550C1
-P 12625 3725
-F 0 "#PWR?" H 12625 3575 50  0001 C CNN
-F 1 "+5V" H 12640 3898 50  0000 C CNN
-F 2 "" H 12625 3725 50  0001 C CNN
-F 3 "" H 12625 3725 50  0001 C CNN
-	1    12625 3725
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5FF558BD
-P 14700 8425
-F 0 "#PWR?" H 14700 8275 50  0001 C CNN
-F 1 "+5V" H 14715 8598 50  0000 C CNN
-F 2 "" H 14700 8425 50  0001 C CNN
-F 3 "" H 14700 8425 50  0001 C CNN
-	1    14700 8425
-	1    0    0    -1  
-$EndComp
-$Comp
-L RainbowPlay-rescue:PWR_FLAG-power #FLG0102
-U 1 1 5C778511
-P 2050 3775
-F 0 "#FLG0102" H 2050 3850 50  0001 C CNN
-F 1 "PWR_FLAG" H 2050 3949 50  0000 C CNN
-F 2 "" H 2050 3775 50  0001 C CNN
-F 3 "~" H 2050 3775 50  0001 C CNN
-	1    2050 3775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 3775 2250 3775
-Connection ~ 2250 3775
-Text Label 3500 3375 2    50   ~ 0
+	3725 2575 2900 2575
+Text Label 3750 3375 2    50   ~ 0
 PWM_AUDIO_L
-Wire Wire Line
-	2900 3375 3500 3375
 Text Label 1800 3475 0    50   ~ 0
 PWM_AUDIO_R
 Wire Wire Line
 	2400 3475 1800 3475
-Text Notes 3050 2975 0    50   ~ 0
+Text Notes 3250 2975 0    50   ~ 0
 inky SPI_CE0
 NoConn ~ 2900 2975
-Wire Wire Line
-	3525 3075 2900 3075
-Text Notes 12500 3275 0    50   ~ 0
-Optional gain
-Text Notes 12525 5125 0    50   ~ 0
-Optional gain
-NoConn ~ 7350 6650
-NoConn ~ 7350 6750
 Text Notes 1325 2975 0    50   ~ 0
 inky SCLK
 Wire Wire Line
@@ -1510,11 +209,8 @@ NoConn ~ 2400 2675
 NoConn ~ 2400 1975
 NoConn ~ 2400 2075
 NoConn ~ 2400 2175
-Text Notes 1325 3075 0    50   ~ 0
+Text Notes 2175 3100 0    50   ~ 0
 GND
-Text Notes 3400 2075 0    50   ~ 0
-GND
-NoConn ~ 2900 2375
 Text Notes 1325 2775 0    50   ~ 0
 inky MOSI
 Text Notes 1325 2675 0    50   ~ 0
@@ -1533,4 +229,1577 @@ Text Notes 1325 2475 0    50   ~ 0
 inky Reset
 Text Notes 1325 2375 0    50   ~ 0
 inky Busy
+NoConn ~ -4700 4925
+$Comp
+L RainbowPlay:TPA2001D2 U1
+U 1 1 610958EE
+P 9625 2850
+F 0 "U1" H 9625 3625 50  0000 C CNN
+F 1 "TPA2001D2" H 9625 3534 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-24-1EP_4.4x7.8mm_P0.65mm_EP3.2x5mm" H 9475 2850 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tpa2001d2.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626665696615&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftpa2001d2" H 9475 2850 50  0001 C CNN
+F 4 "2.31" H 9625 2850 50  0001 C CNN "Price"
+F 5 "Digikay" H 9625 2850 50  0001 C CNN "Vendor"
+	1    9625 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 6135BFB8
+P 5800 2750
+F 0 "L1" V 5990 2750 50  0000 C CNN
+F 1 "10uH" V 5899 2750 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 5800 2750 50  0001 C CNN
+F 3 "~" H 5800 2750 50  0001 C CNN
+F 4 "ASMCI-0603-100M-T" V 5800 2750 50  0001 C CNN "Part number"
+F 5 "Digikey" V 5800 2750 50  0001 C CNN "Vendor"
+F 6 "$0.22" V 5800 2750 50  0001 C CNN "Price"
+	1    5800 2750
+	0    -1   -1   0   
+$EndComp
+Text Label 10475 2650 2    50   ~ 0
+AUD_L+
+Text Label 10475 3100 2    50   ~ 0
+AUD_R+
+Text Label 8800 2650 0    50   ~ 0
+AUD_L-
+Text Label 8800 3100 0    50   ~ 0
+AUD_R-
+$Comp
+L Device:Speaker LS1
+U 1 1 613D5076
+P 13000 2675
+F 0 "LS1" H 13170 2671 50  0000 L CNN
+F 1 "Speaker" H 13170 2580 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13000 2475 50  0001 C CNN
+F 3 "~" H 12990 2625 50  0001 C CNN
+	1    13000 2675
+	1    0    0    -1  
+$EndComp
+Text Label 12500 2675 0    50   ~ 0
+SPK_L-
+Wire Wire Line
+	12500 2675 12800 2675
+Text Label 12500 2775 0    50   ~ 0
+SPK_L+
+Wire Wire Line
+	12500 2775 12800 2775
+$Comp
+L Device:Speaker LS2
+U 1 1 614177E8
+P 13000 3175
+F 0 "LS2" H 13170 3171 50  0000 L CNN
+F 1 "Speaker" H 13170 3080 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13000 2975 50  0001 C CNN
+F 3 "~" H 12990 3125 50  0001 C CNN
+	1    13000 3175
+	1    0    0    -1  
+$EndComp
+Text Label 12500 3175 0    50   ~ 0
+SPK_R-
+Wire Wire Line
+	12500 3175 12800 3175
+Text Label 12500 3275 0    50   ~ 0
+SPK_R+
+Wire Wire Line
+	12500 3275 12800 3275
+Text Label 8800 2200 0    50   ~ 0
+SPK_L-
+Text Label 10475 2200 2    50   ~ 0
+SPK_L+
+Wire Wire Line
+	10475 2200 10175 2200
+Text Label 8775 3550 0    50   ~ 0
+SPK_R-
+Text Label 10475 3550 2    50   ~ 0
+SPK_R+
+Text Label 3725 2375 2    50   ~ 0
+LED
+NoConn ~ 2400 3775
+Wire Wire Line
+	2900 2775 3050 2775
+Wire Wire Line
+	3050 2775 3050 2850
+Wire Wire Line
+	2900 3375 3750 3375
+Wire Wire Line
+	3725 2675 2900 2675
+Text Label 3725 2675 2    50   ~ 0
+BTN_B
+Wire Wire Line
+	3725 2375 2900 2375
+Text Label 3750 3575 2    50   ~ 0
+PWR_LED
+Wire Wire Line
+	3750 3575 2900 3575
+Text Notes 3100 2100 0    50   ~ 0
+GND
+Text Notes 3100 2825 0    50   ~ 0
+GND
+Text Notes 2950 3325 0    50   ~ 0
+GND
+Text Notes 2950 3525 0    50   ~ 0
+GND
+Text Notes 2200 3825 0    50   ~ 0
+GND
+Text Notes 3100 2500 0    50   ~ 0
+GND
+Text Label 3750 3775 2    50   ~ 0
+PWR_BTN
+Wire Wire Line
+	2900 3775 3750 3775
+Text Label 3725 2175 2    50   ~ 0
+UART_TX
+Text Label 3725 2275 2    50   ~ 0
+UART_RX
+Wire Wire Line
+	2900 2175 3725 2175
+Wire Wire Line
+	2900 2275 3725 2275
+NoConn ~ 2900 3075
+Text Label 8800 2350 0    50   ~ 0
+GAIN_0
+Wire Wire Line
+	8800 2350 9075 2350
+Text Label 10475 3400 2    50   ~ 0
+GAIN_1
+Wire Wire Line
+	10475 3400 10175 3400
+Text Label 1800 3575 0    50   ~ 0
+GAIN_0
+Wire Wire Line
+	1800 3575 2400 3575
+Text Label 1800 3675 0    50   ~ 0
+GAIN_1
+Wire Wire Line
+	1800 3675 2400 3675
+$Comp
+L power:+5V #PWR010
+U 1 1 61FE333A
+P 10775 1825
+F 0 "#PWR010" H 10775 1675 50  0001 C CNN
+F 1 "+5V" H 10790 1998 50  0000 C CNN
+F 2 "" H 10775 1825 50  0001 C CNN
+F 3 "" H 10775 1825 50  0001 C CNN
+	1    10775 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 62008AA6
+P 8400 2375
+F 0 "#PWR02" H 8400 2225 50  0001 C CNN
+F 1 "+5V" H 8415 2548 50  0000 C CNN
+F 2 "" H 8400 2375 50  0001 C CNN
+F 3 "" H 8400 2375 50  0001 C CNN
+	1    8400 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 62055244
+P 8650 3500
+F 0 "C10" H 8650 3400 50  0000 L CNN
+F 1 "220pF" H 8650 3625 50  0000 L CNN
+F 2 "" H 8688 3350 50  0001 C CNN
+F 3 "~" H 8650 3500 50  0001 C CNN
+	1    8650 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 621F6AD7
+P 8650 2650
+F 0 "C9" H 8550 2550 50  0000 L CNN
+F 1 "0.1uF" H 8675 2550 50  0000 L CNN
+F 2 "" H 8688 2500 50  0001 C CNN
+F 3 "~" H 8650 2650 50  0001 C CNN
+	1    8650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 6244B25A
+P 8400 3500
+F 0 "C8" H 8275 3700 50  0000 L CNN
+F 1 "0.1uF" H 8175 3600 50  0000 L CNN
+F 2 "" H 8438 3350 50  0001 C CNN
+F 3 "~" H 8400 3500 50  0001 C CNN
+	1    8400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 6260BB5A
+P 10975 3475
+F 0 "C12" H 10825 3575 50  0000 L CNN
+F 1 "0.1uF" H 10825 3375 50  0000 L CNN
+F 2 "" H 11013 3325 50  0001 C CNN
+F 3 "~" H 10975 3475 50  0001 C CNN
+	1    10975 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10975 3700 10975 3625
+$Comp
+L Device:C C13
+U 1 1 62635858
+P 11175 3050
+F 0 "C13" H 11200 2950 50  0000 L CNN
+F 1 "0.1uF" H 11200 3150 50  0000 L CNN
+F 2 "" H 11213 2900 50  0001 C CNN
+F 3 "~" H 11175 3050 50  0001 C CNN
+	1    11175 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11175 3200 11175 3700
+Wire Wire Line
+	11175 3700 10975 3700
+$Comp
+L Device:R R7
+U 1 1 627612CD
+P 10425 2950
+F 0 "R7" V 10375 2800 50  0000 C CNN
+F 1 "120k" V 10425 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10355 2950 50  0001 C CNN
+F 3 "~" H 10425 2950 50  0001 C CNN
+	1    10425 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 620C29C4
+P 9000 3775
+F 0 "#PWR05" H 9000 3525 50  0001 C CNN
+F 1 "GND" H 9005 3602 50  0000 C CNN
+F 2 "" H 9000 3775 50  0001 C CNN
+F 3 "" H 9000 3775 50  0001 C CNN
+	1    9000 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2200 9075 2200
+Wire Wire Line
+	10475 3100 10175 3100
+Wire Wire Line
+	10475 3550 10175 3550
+$Comp
+L power:GND #PWR09
+U 1 1 629F0581
+P 10275 3775
+F 0 "#PWR09" H 10275 3525 50  0001 C CNN
+F 1 "GND" H 10280 3602 50  0000 C CNN
+F 2 "" H 10275 3775 50  0001 C CNN
+F 3 "" H 10275 3775 50  0001 C CNN
+	1    10275 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10275 3775 10275 3700
+Wire Wire Line
+	10275 3700 10175 3700
+$Comp
+L power:GND #PWR06
+U 1 1 62A06DD3
+P 9250 1700
+F 0 "#PWR06" H 9250 1450 50  0001 C CNN
+F 1 "GND" H 9255 1527 50  0000 C CNN
+F 2 "" H 9250 1700 50  0001 C CNN
+F 3 "" H 9250 1700 50  0001 C CNN
+	1    9250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1700 9000 1700
+Wire Wire Line
+	9000 1700 9000 2050
+Wire Wire Line
+	9000 2050 9075 2050
+$Comp
+L power:GND #PWR07
+U 1 1 62A1E183
+P 9950 1700
+F 0 "#PWR07" H 9950 1450 50  0001 C CNN
+F 1 "GND" H 9955 1527 50  0000 C CNN
+F 2 "" H 9950 1700 50  0001 C CNN
+F 3 "" H 9950 1700 50  0001 C CNN
+	1    9950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1700 10250 1700
+Wire Wire Line
+	10250 1700 10250 2050
+Wire Wire Line
+	10250 2050 10175 2050
+Wire Wire Line
+	8775 3550 9075 3550
+Wire Wire Line
+	8800 2650 9075 2650
+Wire Wire Line
+	9025 3250 9025 3400
+Wire Wire Line
+	9025 3400 9075 3400
+Wire Wire Line
+	8800 3100 9075 3100
+Wire Wire Line
+	10275 2950 10175 2950
+Connection ~ 10275 3700
+Connection ~ 10975 3700
+Wire Wire Line
+	10175 3250 10775 3250
+Wire Wire Line
+	10975 3250 10975 3325
+Wire Wire Line
+	10175 2800 10775 2800
+Wire Wire Line
+	11175 2800 11175 2900
+Wire Wire Line
+	10275 3700 10625 3700
+Wire Wire Line
+	10625 2950 10575 2950
+Wire Wire Line
+	10475 2650 10175 2650
+$Comp
+L Device:C C11
+U 1 1 62EF396F
+P 10775 3475
+F 0 "C11" H 10775 3600 50  0000 L CNN
+F 1 "0.1uF" H 10775 3375 50  0000 L CNN
+F 2 "" H 10813 3325 50  0001 C CNN
+F 3 "~" H 10775 3475 50  0001 C CNN
+	1    10775 3475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10625 2950 10625 3700
+Connection ~ 10625 3700
+Wire Wire Line
+	10625 3700 10775 3700
+Wire Wire Line
+	10175 2500 10775 2500
+Wire Wire Line
+	10775 3625 10775 3700
+Connection ~ 10775 3700
+Wire Wire Line
+	10775 3700 10975 3700
+Wire Wire Line
+	10775 1825 10775 2500
+Connection ~ 10775 2800
+Wire Wire Line
+	10775 2800 11175 2800
+Wire Wire Line
+	10775 2800 10775 2500
+Connection ~ 10775 2500
+$Comp
+L power:GND #PWR012
+U 1 1 630F6356
+P 11525 2550
+F 0 "#PWR012" H 11525 2300 50  0001 C CNN
+F 1 "GND" H 11530 2377 50  0000 C CNN
+F 2 "" H 11525 2550 50  0001 C CNN
+F 3 "" H 11525 2550 50  0001 C CNN
+	1    11525 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11525 2550 11525 2500
+Wire Wire Line
+	11525 2500 11400 2500
+Wire Wire Line
+	11400 2500 11400 2300
+Wire Wire Line
+	11400 2300 11275 2300
+Connection ~ 11400 2500
+Wire Wire Line
+	11400 2500 11275 2500
+Wire Wire Line
+	10975 2300 10875 2300
+Wire Wire Line
+	10875 2300 10875 2350
+Wire Wire Line
+	10875 2350 10175 2350
+Wire Wire Line
+	10975 2500 10775 2500
+$Comp
+L Device:C C14
+U 1 1 6306A4E1
+P 11125 2300
+F 0 "C14" V 11050 2375 50  0000 L CNN
+F 1 "1uF" V 11175 2100 50  0000 L CNN
+F 2 "" H 11163 2150 50  0001 C CNN
+F 3 "~" H 11125 2300 50  0001 C CNN
+	1    11125 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 630E13AB
+P 11125 2500
+F 0 "C15" V 11075 2575 50  0000 L CNN
+F 1 "10uF" V 11200 2250 50  0000 L CNN
+F 2 "" H 11163 2350 50  0001 C CNN
+F 3 "~" H 11125 2500 50  0001 C CNN
+	1    11125 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 63209958
+P 11525 3475
+F 0 "C16" H 11600 3600 50  0000 L CNN
+F 1 "10uF" H 11550 3400 50  0000 L CNN
+F 2 "" H 11563 3325 50  0001 C CNN
+F 3 "~" H 11525 3475 50  0001 C CNN
+	1    11525 3475
+	-1   0    0    1   
+$EndComp
+Connection ~ 10975 3250
+Wire Wire Line
+	11525 3250 11525 3325
+Wire Wire Line
+	10975 3250 11525 3250
+Wire Wire Line
+	11525 3625 11525 3700
+Wire Wire Line
+	11525 3700 11175 3700
+Connection ~ 11175 3700
+Wire Wire Line
+	9000 3775 9000 3700
+Connection ~ 9000 3700
+Wire Wire Line
+	9000 3700 9075 3700
+Wire Wire Line
+	9075 2800 8650 2800
+Wire Wire Line
+	8400 3350 8400 3250
+Connection ~ 8400 3250
+Wire Wire Line
+	8400 3650 8400 3700
+Wire Wire Line
+	8400 3700 8650 3700
+Wire Wire Line
+	9075 2950 8650 2950
+Wire Wire Line
+	8650 2950 8650 3350
+Wire Wire Line
+	8650 3650 8650 3700
+Connection ~ 8650 3700
+Wire Wire Line
+	5950 2375 6150 2375
+Wire Wire Line
+	5300 2375 4725 2375
+Wire Wire Line
+	5600 2375 5650 2375
+Wire Wire Line
+	6150 2750 6150 2700
+Wire Wire Line
+	6150 2400 6150 2375
+Wire Wire Line
+	8650 2500 9075 2500
+Wire Wire Line
+	9025 3250 8400 3250
+Wire Wire Line
+	8650 3700 9000 3700
+$Comp
+L Device:C C5
+U 1 1 63E32E70
+P 6450 2750
+F 0 "C5" V 6200 2750 50  0000 C CNN
+F 1 "0.1uF" V 6300 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 2600 50  0001 C CNN
+F 3 "~" H 6450 2750 50  0001 C CNN
+	1    6450 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 63E333DA
+P 6450 2375
+F 0 "C4" V 6200 2375 50  0000 C CNN
+F 1 "0.1uF" V 6300 2375 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 2225 50  0001 C CNN
+F 3 "~" H 6450 2375 50  0001 C CNN
+	1    6450 2375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 2750 6150 2750
+Wire Wire Line
+	6600 2750 7000 2750
+Wire Wire Line
+	7000 2375 6600 2375
+Wire Wire Line
+	6300 2375 6150 2375
+Connection ~ 6150 2375
+Connection ~ 8650 2500
+Wire Wire Line
+	8400 3250 8400 2500
+Wire Wire Line
+	8400 2375 8400 2500
+Connection ~ 8400 2500
+Text Notes 12525 5450 2    100  ~ 0
+UART
+Wire Wire Line
+	12925 5975 12475 5975
+Wire Wire Line
+	12925 6075 12475 6075
+Wire Wire Line
+	12725 6175 12725 6300
+Wire Wire Line
+	12475 6175 12725 6175
+Wire Wire Line
+	12725 5875 12475 5875
+Wire Wire Line
+	12725 5750 12725 5875
+$Comp
+L power:+5V #PWR0117
+U 1 1 61C12B7D
+P 12725 5750
+F 0 "#PWR0117" H 12725 5600 50  0001 C CNN
+F 1 "+5V" H 12740 5923 50  0000 C CNN
+F 2 "" H 12725 5750 50  0001 C CNN
+F 3 "" H 12725 5750 50  0001 C CNN
+	1    12725 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L RainbowPlay-rescue:GND-power #PWR0116
+U 1 1 61C12514
+P 12725 6300
+F 0 "#PWR0116" H 12725 6050 50  0001 C CNN
+F 1 "GND" H 12730 6127 50  0001 C CNN
+F 2 "" H 12725 6300 50  0001 C CNN
+F 3 "" H 12725 6300 50  0001 C CNN
+	1    12725 6300
+	1    0    0    -1  
+$EndComp
+Text Label 12925 6075 2    50   ~ 0
+UART_RX
+Text Label 12925 5975 2    50   ~ 0
+UART_TX
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 61C1149E
+P 12275 5975
+F 0 "J3" H 12300 6175 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 12300 5700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 12275 5975 50  0001 C CNN
+F 3 "~" H 12275 5975 50  0001 C CNN
+	1    12275 5975
+	1    0    0    -1  
+$EndComp
+Text Notes 14675 5675 2    100  ~ 0
+PWR BTN
+Wire Wire Line
+	13850 6050 14225 6050
+Wire Wire Line
+	14775 6050 14625 6050
+$Comp
+L RainbowPlay-rescue:GND-power #PWR0115
+U 1 1 61A38266
+P 14775 6050
+F 0 "#PWR0115" H 14775 5800 50  0001 C CNN
+F 1 "GND" H 14780 5877 50  0001 C CNN
+F 2 "" H 14775 6050 50  0001 C CNN
+F 3 "" H 14775 6050 50  0001 C CNN
+	1    14775 6050
+	0    -1   -1   0   
+$EndComp
+Text Label 13850 6050 0    50   ~ 0
+PWR_BTN
+Wire Wire Line
+	14375 7875 14375 7975
+Connection ~ 14375 7875
+Wire Wire Line
+	14375 7450 14375 7575
+Connection ~ 14375 7450
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 61583B13
+P 13675 7775
+F 0 "J2" H 13783 8156 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 13783 8065 50  0000 C CNN
+F 2 "" H 13675 7775 50  0001 C CNN
+F 3 "~" H 13675 7775 50  0001 C CNN
+	1    13675 7775
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13875 8075
+Wire Wire Line
+	14075 7975 13875 7975
+Text Label 14075 7975 0    50   ~ 0
+EN
+NoConn ~ 13875 7875
+Wire Wire Line
+	14075 7775 13875 7775
+Text Label 14075 7775 0    50   ~ 0
+LB
+Wire Wire Line
+	14375 7675 14375 7875
+Wire Wire Line
+	13875 7675 14375 7675
+$Comp
+L power:GND #PWR0109
+U 1 1 61538B1E
+P 14375 7975
+F 0 "#PWR0109" H 14375 7725 50  0001 C CNN
+F 1 "GND" H 14380 7802 50  0000 C CNN
+F 2 "" H 14375 7975 50  0001 C CNN
+F 3 "" H 14375 7975 50  0001 C CNN
+	1    14375 7975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14375 7575 13875 7575
+Wire Wire Line
+	14375 7400 14375 7450
+$Comp
+L power:+5V #PWR0108
+U 1 1 6152F6AD
+P 14375 7400
+F 0 "#PWR0108" H 14375 7250 50  0001 C CNN
+F 1 "+5V" H 14390 7573 50  0000 C CNN
+F 2 "" H 14375 7400 50  0001 C CNN
+F 3 "" H 14375 7400 50  0001 C CNN
+	1    14375 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L RainbowPlay-rescue:PWR_FLAG-power #FLG03
+U 1 1 5FBD3FE4
+P 14525 7450
+F 0 "#FLG03" H 14525 7525 50  0001 C CNN
+F 1 "PWR_FLAG" H 14525 7624 50  0000 C CNN
+F 2 "" H 14525 7450 50  0001 C CNN
+F 3 "~" H 14525 7450 50  0001 C CNN
+	1    14525 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L RainbowPlay-rescue:PWR_FLAG-power #FLG04
+U 1 1 5FBDA38B
+P 14525 7875
+F 0 "#FLG04" H 14525 7950 50  0001 C CNN
+F 1 "PWR_FLAG" H 14525 8049 50  0000 C CNN
+F 2 "" H 14525 7875 50  0001 C CNN
+F 3 "~" H 14525 7875 50  0001 C CNN
+	1    14525 7875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14525 7450 14375 7450
+Wire Wire Line
+	14525 7875 14375 7875
+Text Notes 13875 6875 0    150  ~ 0
+Power In
+Text Notes 12150 7100 0    150  ~ 0
+Mounting\nHoles
+$Comp
+L RainbowPlay-rescue:MountingHole-Mechanical H4
+U 1 1 5C7C8030
+P 12225 8075
+F 0 "H4" H 12325 8121 50  0000 L CNN
+F 1 "MountingHole" H 12325 8030 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12225 8075 50  0001 C CNN
+F 3 "~" H 12225 8075 50  0001 C CNN
+	1    12225 8075
+	1    0    0    -1  
+$EndComp
+$Comp
+L RainbowPlay-rescue:MountingHole-Mechanical H3
+U 1 1 5C7C8014
+P 12225 7875
+F 0 "H3" H 12325 7921 50  0000 L CNN
+F 1 "MountingHole" H 12325 7830 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12225 7875 50  0001 C CNN
+F 3 "~" H 12225 7875 50  0001 C CNN
+	1    12225 7875
+	1    0    0    -1  
+$EndComp
+$Comp
+L RainbowPlay-rescue:MountingHole-Mechanical H2
+U 1 1 5C7C7FBC
+P 12225 7675
+F 0 "H2" H 12325 7721 50  0000 L CNN
+F 1 "MountingHole" H 12325 7630 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12225 7675 50  0001 C CNN
+F 3 "~" H 12225 7675 50  0001 C CNN
+	1    12225 7675
+	1    0    0    -1  
+$EndComp
+$Comp
+L RainbowPlay-rescue:MountingHole-Mechanical H1
+U 1 1 5C7C4C81
+P 12225 7475
+F 0 "H1" H 12325 7521 50  0000 L CNN
+F 1 "MountingHole" H 12325 7430 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 12225 7475 50  0001 C CNN
+F 3 "~" H 12225 7475 50  0001 C CNN
+	1    12225 7475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 7650 5350 7650
+Wire Wire Line
+	5950 7650 6250 7650
+Wire Wire Line
+	7150 7650 6850 7650
+Wire Wire Line
+	8050 7650 7750 7650
+Connection ~ 8350 6600
+Wire Wire Line
+	9150 6600 9150 6450
+Wire Wire Line
+	8350 6600 9150 6600
+Connection ~ 8350 5750
+Wire Wire Line
+	9150 5750 8350 5750
+Wire Wire Line
+	9150 5850 9150 5750
+Connection ~ 8350 8100
+Wire Wire Line
+	9100 8100 9100 7950
+Wire Wire Line
+	8350 8100 9100 8100
+Connection ~ 8350 7200
+Wire Wire Line
+	9100 7200 8350 7200
+Wire Wire Line
+	9100 7350 9100 7200
+Wire Wire Line
+	8800 7650 8650 7650
+Wire Wire Line
+	9750 7650 9400 7650
+Wire Wire Line
+	9750 6150 9750 7650
+Wire Wire Line
+	9450 6150 9750 6150
+$Comp
+L LED:SK6812 D7
+U 1 1 61DE5D3F
+P 9100 7650
+F 0 "D7" H 8875 7950 50  0000 L CNN
+F 1 "SK6812" H 9444 7605 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 9150 7350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 9200 7275 50  0001 L TNN
+	1    9100 7650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D6
+U 1 1 61DE4F9A
+P 9150 6150
+F 0 "D6" H 9494 6196 50  0000 L CNN
+F 1 "SK6812" H 9494 6105 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 9200 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 9250 5775 50  0001 L TNN
+	1    9150 6150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4450 7650
+Wire Wire Line
+	8350 7200 8350 7350
+Wire Wire Line
+	7450 7200 7450 7350
+Wire Wire Line
+	5650 7200 5650 7350
+Wire Wire Line
+	4750 7200 4750 7350
+Wire Wire Line
+	6550 7200 6550 7350
+Wire Wire Line
+	6550 7050 6550 7200
+$Comp
+L power:+5V #PWR0114
+U 1 1 617793C0
+P 6550 7050
+F 0 "#PWR0114" H 6550 6900 50  0001 C CNN
+F 1 "+5V" H 6425 7050 50  0000 C CNN
+F 2 "" H 6550 7050 50  0001 C CNN
+F 3 "" H 6550 7050 50  0001 C CNN
+	1    6550 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 7200
+Wire Wire Line
+	7450 7200 8350 7200
+Connection ~ 6550 7200
+Wire Wire Line
+	6550 7200 7450 7200
+Connection ~ 5650 7200
+Wire Wire Line
+	5650 7200 6550 7200
+Wire Wire Line
+	4750 7200 5650 7200
+Wire Wire Line
+	6550 8200 6550 8100
+$Comp
+L power:GND #PWR0113
+U 1 1 6175D62F
+P 6550 8200
+F 0 "#PWR0113" H 6550 7950 50  0001 C CNN
+F 1 "GND" H 6555 8027 50  0000 C CNN
+F 2 "" H 6550 8200 50  0001 C CNN
+F 3 "" H 6550 8200 50  0001 C CNN
+	1    6550 8200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 8100
+Wire Wire Line
+	8350 8100 8350 7950
+Wire Wire Line
+	7450 8100 8350 8100
+Connection ~ 6550 8100
+Wire Wire Line
+	7450 8100 7450 7950
+Wire Wire Line
+	6550 8100 7450 8100
+Connection ~ 5650 8100
+Wire Wire Line
+	6550 8100 6550 7950
+Wire Wire Line
+	5650 8100 6550 8100
+Wire Wire Line
+	5650 8100 5650 7950
+Wire Wire Line
+	4750 8100 5650 8100
+Wire Wire Line
+	4750 7950 4750 8100
+Wire Wire Line
+	8650 6150 8850 6150
+$Comp
+L LED:SK6812 D8
+U 1 1 616FA65D
+P 8350 7650
+F 0 "D8" H 8150 7925 50  0000 L CNN
+F 1 "SK6812" H 8694 7605 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 8400 7350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 8450 7275 50  0001 L TNN
+	1    8350 7650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D9
+U 1 1 616FA635
+P 7450 7650
+F 0 "D9" H 7275 7900 50  0000 L CNN
+F 1 "SK6812" H 7794 7605 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 7500 7350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 7550 7275 50  0001 L TNN
+	1    7450 7650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D10
+U 1 1 616FA60D
+P 6550 7650
+F 0 "D10" H 6375 7900 50  0000 L CNN
+F 1 "SK6812" H 6894 7605 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 6600 7350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 6650 7275 50  0001 L TNN
+	1    6550 7650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D11
+U 1 1 616FA5E5
+P 5650 7650
+F 0 "D11" H 5450 7900 50  0000 L CNN
+F 1 "SK6812" H 5994 7605 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 5700 7350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 5750 7275 50  0001 L TNN
+	1    5650 7650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D12
+U 1 1 616FA527
+P 4750 7650
+F 0 "D12" H 4525 7900 50  0000 L CNN
+F 1 "SK6812" H 5094 7605 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 4800 7350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 4850 7275 50  0001 L TNN
+	1    4750 7650
+	-1   0    0    -1  
+$EndComp
+Text Notes 3625 6550 0    50   ~ 0
+Level-shift
+Text Notes 3625 5100 0    150  ~ 0
+LEDs
+Wire Wire Line
+	3750 5800 3750 5850
+Connection ~ 3750 5800
+Wire Wire Line
+	3550 5800 3750 5800
+Wire Wire Line
+	3550 6150 3650 6150
+Connection ~ 3550 6150
+Wire Wire Line
+	3550 6100 3550 6150
+$Comp
+L Device:R R5
+U 1 1 616A4113
+P 3550 5950
+F 0 "R5" H 3620 5904 50  0000 L CNN
+F 1 "10k" H 3620 5995 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 5950 50  0001 C CNN
+F 3 "~" H 3550 5950 50  0001 C CNN
+	1    3550 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 5700 3750 5800
+$Comp
+L RainbowPlay-rescue:+3.3V-power #PWR0112
+U 1 1 616987F0
+P 3750 5700
+F 0 "#PWR0112" H 3750 5550 50  0001 C CNN
+F 1 "+3.3V" H 3765 5873 50  0000 C CNN
+F 2 "" H 3750 5700 50  0001 C CNN
+F 3 "" H 3750 5700 50  0001 C CNN
+	1    3750 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6150 3550 6150
+Text Label 3250 6150 0    50   ~ 0
+LED
+Wire Wire Line
+	4250 6150 4450 6150
+Connection ~ 4250 6150
+Wire Wire Line
+	4250 6050 4250 6150
+Wire Wire Line
+	4050 6150 4250 6150
+Connection ~ 4750 5750
+Wire Wire Line
+	4250 5750 4750 5750
+$Comp
+L Device:R R6
+U 1 1 6164BD34
+P 4250 5900
+F 0 "R6" H 4320 5854 50  0000 L CNN
+F 1 "10k" H 4320 5945 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 5900 50  0001 C CNN
+F 3 "~" H 4250 5900 50  0001 C CNN
+	1    4250 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q1
+U 1 1 6164A3CB
+P 3850 6150
+F 0 "Q1" V 4011 6150 60  0000 C CNN
+F 1 "BSS138" V 4117 6150 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 4050 6350 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4050 6450 60  0001 L CNN
+F 4 "BSS138CT-ND" H 4050 6550 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 4050 6650 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4050 6750 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4050 6850 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4050 6950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 4050 7050 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 4050 7150 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 4050 7250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4050 7350 60  0001 L CNN "Status"
+	1    3850 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 5600 6550 5750
+$Comp
+L power:+5V #PWR0111
+U 1 1 6162CBB6
+P 6550 5600
+F 0 "#PWR0111" H 6550 5450 50  0001 C CNN
+F 1 "+5V" H 6565 5773 50  0000 C CNN
+F 2 "" H 6550 5600 50  0001 C CNN
+F 3 "" H 6550 5600 50  0001 C CNN
+	1    6550 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6700 6550 6600
+$Comp
+L power:GND #PWR0110
+U 1 1 6162256E
+P 6550 6700
+F 0 "#PWR0110" H 6550 6450 50  0001 C CNN
+F 1 "GND" H 6550 6550 50  0000 C CNN
+F 2 "" H 6550 6700 50  0001 C CNN
+F 3 "" H 6550 6700 50  0001 C CNN
+	1    6550 6700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 6600
+Wire Wire Line
+	8350 6600 8350 6450
+Wire Wire Line
+	7450 6600 8350 6600
+Connection ~ 6550 6600
+Wire Wire Line
+	7450 6600 7450 6450
+Wire Wire Line
+	6550 6600 7450 6600
+Connection ~ 5650 6600
+Wire Wire Line
+	6550 6600 6550 6450
+Wire Wire Line
+	5650 6600 6550 6600
+Wire Wire Line
+	5650 6600 5650 6450
+Wire Wire Line
+	4750 6600 5650 6600
+Wire Wire Line
+	4750 6450 4750 6600
+Connection ~ 7450 5750
+Wire Wire Line
+	8350 5750 8350 5850
+Wire Wire Line
+	7450 5750 8350 5750
+Connection ~ 6550 5750
+Wire Wire Line
+	7450 5750 7450 5850
+Wire Wire Line
+	6550 5750 7450 5750
+Connection ~ 5650 5750
+Wire Wire Line
+	6550 5750 6550 5850
+Wire Wire Line
+	5650 5750 6550 5750
+Wire Wire Line
+	5650 5750 5650 5850
+Wire Wire Line
+	4750 5750 5650 5750
+Wire Wire Line
+	4750 5850 4750 5750
+Wire Wire Line
+	7750 6150 8050 6150
+Wire Wire Line
+	6850 6150 7150 6150
+Wire Wire Line
+	5950 6150 6250 6150
+Wire Wire Line
+	5050 6150 5350 6150
+$Comp
+L LED:SK6812 D5
+U 1 1 615AF2FD
+P 8350 6150
+F 0 "D5" H 8694 6196 50  0000 L CNN
+F 1 "SK6812" H 8694 6105 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 8400 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 8450 5775 50  0001 L TNN
+	1    8350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D4
+U 1 1 615AEA5F
+P 7450 6150
+F 0 "D4" H 7794 6196 50  0000 L CNN
+F 1 "SK6812" H 7794 6105 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 7500 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 7550 5775 50  0001 L TNN
+	1    7450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D3
+U 1 1 615AE284
+P 6550 6150
+F 0 "D3" H 6894 6196 50  0000 L CNN
+F 1 "SK6812" H 6894 6105 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 6600 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 6650 5775 50  0001 L TNN
+	1    6550 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D2
+U 1 1 615AD044
+P 5650 6150
+F 0 "D2" H 5994 6196 50  0000 L CNN
+F 1 "SK6812" H 5994 6105 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 5700 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 5750 5775 50  0001 L TNN
+	1    5650 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D1
+U 1 1 615AC79A
+P 4750 6150
+F 0 "D1" H 5094 6196 50  0000 L CNN
+F 1 "SK6812" H 5094 6105 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 4800 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 4850 5775 50  0001 L TNN
+	1    4750 6150
+	1    0    0    -1  
+$EndComp
+Text Notes 1425 5025 0    150  ~ 0
+UI buttons
+$Comp
+L B3F-3152:B3F-3152 SWE1
+U 1 1 612D1D9A
+P 2025 7950
+F 0 "SWE1" V 2114 7800 50  0000 C CNN
+F 1 "B3F-3152" H 2025 7950 50  0001 L BNN
+F 2 "B3F3152" H 2025 7950 50  0001 L BNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" H 2025 7950 50  0001 L BNN
+F 4 "0.49" H 2025 7950 50  0001 C CNN "Price"
+F 5 "Digikey" H 2025 7950 50  0001 C CNN "Vendor"
+	1    2025 7950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L B3F-3152:B3F-3152 SWD1
+U 1 1 612D1393
+P 2025 7325
+F 0 "SWD1" V 2114 7175 50  0000 C CNN
+F 1 "B3F-3152" H 2025 7325 50  0001 L BNN
+F 2 "B3F3152" H 2025 7325 50  0001 L BNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" H 2025 7325 50  0001 L BNN
+F 4 "0.49" H 2025 7325 50  0001 C CNN "Price"
+F 5 "Digikey" H 2025 7325 50  0001 C CNN "Vendor"
+	1    2025 7325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L B3F-3152:B3F-3152 SWC1
+U 1 1 612D0BA8
+P 2025 6700
+F 0 "SWC1" V 2114 6550 50  0000 C CNN
+F 1 "B3F-3152" H 2025 6700 50  0001 L BNN
+F 2 "B3F3152" H 2025 6700 50  0001 L BNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" H 2025 6700 50  0001 L BNN
+F 4 "0.49" H 2025 6700 50  0001 C CNN "Price"
+F 5 "Digikey" H 2025 6700 50  0001 C CNN "Vendor"
+	1    2025 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L B3F-3152:B3F-3152 SWB1
+U 1 1 612D02DC
+P 2025 6075
+F 0 "SWB1" V 2114 5925 50  0000 C CNN
+F 1 "B3F-3152" H 2025 6075 50  0001 L BNN
+F 2 "B3F3152" H 2025 6075 50  0001 L BNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" H 2025 6075 50  0001 L BNN
+F 4 "0.49" H 2025 6075 50  0001 C CNN "Price"
+F 5 "Digikey" H 2025 6075 50  0001 C CNN "Vendor"
+	1    2025 6075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L B3F-3152:B3F-3152 SWA1
+U 1 1 612CF821
+P 2025 5475
+F 0 "SWA1" V 2114 5325 50  0000 C CNN
+F 1 "B3F-3152" H 2025 5475 50  0001 L BNN
+F 2 "B3F3152" H 2025 5475 50  0001 L BNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" H 2025 5475 50  0001 L BNN
+F 4 "0.49" H 2025 5475 50  0001 C CNN "Price"
+F 5 "Digikey" H 2025 5475 50  0001 C CNN "Vendor"
+	1    2025 5475
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2650 8150
+Wire Wire Line
+	2650 8300 2650 8150
+$Comp
+L RainbowPlay-rescue:GND-power #PWR0102
+U 1 1 612A5260
+P 2650 8300
+F 0 "#PWR0102" H 2650 8050 50  0001 C CNN
+F 1 "GND" H 2655 8127 50  0001 C CNN
+F 2 "" H 2650 8300 50  0001 C CNN
+F 3 "" H 2650 8300 50  0001 C CNN
+	1    2650 8300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 7950
+Connection ~ 2650 7525
+Wire Wire Line
+	2650 7525 2650 7950
+Connection ~ 2650 7325
+Connection ~ 2650 6900
+Wire Wire Line
+	2650 6900 2650 7325
+Connection ~ 2650 6700
+Connection ~ 2650 6275
+Wire Wire Line
+	2650 6275 2650 6700
+Connection ~ 2650 6075
+Connection ~ 2650 5675
+Wire Wire Line
+	2650 5675 2650 6075
+Wire Wire Line
+	2450 8150 2650 8150
+Connection ~ 2450 8150
+Wire Wire Line
+	2450 8100 2450 8150
+Wire Wire Line
+	2325 8100 2450 8100
+Wire Wire Line
+	2325 8150 2325 8100
+Wire Wire Line
+	2425 8150 2450 8150
+Wire Wire Line
+	2650 7950 2325 7950
+Wire Wire Line
+	2650 7950 2650 8150
+Wire Wire Line
+	2450 7525 2650 7525
+Connection ~ 2450 7525
+Wire Wire Line
+	2450 7475 2450 7525
+Wire Wire Line
+	2325 7475 2450 7475
+Wire Wire Line
+	2325 7525 2325 7475
+Wire Wire Line
+	2425 7525 2450 7525
+Wire Wire Line
+	2650 7325 2325 7325
+Wire Wire Line
+	2650 7325 2650 7525
+Wire Wire Line
+	2450 6900 2650 6900
+Connection ~ 2450 6900
+Wire Wire Line
+	2450 6850 2450 6900
+Wire Wire Line
+	2325 6850 2450 6850
+Wire Wire Line
+	2325 6900 2325 6850
+Wire Wire Line
+	2425 6900 2450 6900
+Wire Wire Line
+	2650 6700 2325 6700
+Wire Wire Line
+	2650 6700 2650 6900
+Wire Wire Line
+	2450 6275 2650 6275
+Connection ~ 2450 6275
+Wire Wire Line
+	2450 6225 2450 6275
+Wire Wire Line
+	2325 6225 2450 6225
+Wire Wire Line
+	2325 6275 2325 6225
+Wire Wire Line
+	2425 6275 2450 6275
+Wire Wire Line
+	2650 6075 2325 6075
+Wire Wire Line
+	2650 6075 2650 6275
+Wire Wire Line
+	2450 5675 2650 5675
+Connection ~ 2450 5675
+Wire Wire Line
+	2450 5625 2450 5675
+Wire Wire Line
+	2325 5625 2450 5625
+Wire Wire Line
+	2325 5675 2325 5625
+Wire Wire Line
+	2425 5675 2450 5675
+Wire Wire Line
+	2650 5475 2325 5475
+Wire Wire Line
+	2650 5475 2650 5675
+Wire Wire Line
+	1425 5475 1925 5475
+Text Label 1425 5475 0    50   ~ 0
+BTN_A
+Wire Wire Line
+	1425 7950 1925 7950
+Text Label 1425 7950 0    50   ~ 0
+BTN_E
+Wire Wire Line
+	1425 6700 1925 6700
+Wire Wire Line
+	1425 7325 1925 7325
+Text Label 1425 7325 0    50   ~ 0
+BTN_D
+Text Label 1425 6700 0    50   ~ 0
+BTN_C
+Wire Wire Line
+	1425 6075 1925 6075
+Text Label 1425 6075 0    50   ~ 0
+BTN_B
+Wire Wire Line
+	8400 2500 8650 2500
+Wire Wire Line
+	9075 3250 9025 3250
+Connection ~ 9025 3250
+$Comp
+L Device:C C3
+U 1 1 640F0F8A
+P 6150 1900
+F 0 "C3" H 6036 1946 50  0000 R CNN
+F 1 "1.5uF" H 6036 1855 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 1750 50  0001 C CNN
+F 3 "~" H 6150 1900 50  0001 C CNN
+	1    6150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L RainbowPlay-rescue:GNDA-power #PWR08
+U 1 1 640F187C
+P 5650 1800
+F 0 "#PWR08" H 5650 1550 50  0001 C CNN
+F 1 "GNDA" H 5655 1627 50  0000 C CNN
+F 2 "" H 5650 1800 50  0001 C CNN
+F 3 "" H 5650 1800 50  0001 C CNN
+	1    5650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1800 5650 1700
+Wire Wire Line
+	6150 2050 6150 2150
+$Comp
+L Device:R R4
+U 1 1 6415769E
+P 6375 1925
+F 0 "R4" V 6168 1925 50  0000 C CNN
+F 1 "5R" V 6259 1925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6305 1925 50  0001 C CNN
+F 3 "~" H 6375 1925 50  0001 C CNN
+	1    6375 1925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6375 2075 6375 2150
+Wire Wire Line
+	6375 2150 6150 2150
+Connection ~ 6150 2150
+Wire Wire Line
+	6150 2150 6150 2375
+Wire Wire Line
+	6375 1775 6375 1700
+Wire Wire Line
+	6375 1700 6150 1700
+Wire Wire Line
+	6150 1700 6150 1750
+$Comp
+L Device:R R3
+U 1 1 641D35D0
+P 6350 3125
+F 0 "R3" V 6143 3125 50  0000 C CNN
+F 1 "5R" V 6234 3125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 3125 50  0001 C CNN
+F 3 "~" H 6350 3125 50  0001 C CNN
+	1    6350 3125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 2900 6350 2900
+Wire Wire Line
+	6350 2900 6350 2975
+Connection ~ 6150 2900
+Wire Wire Line
+	6150 2900 6150 2975
+Wire Wire Line
+	6350 3275 6350 3350
+Wire Wire Line
+	6350 3350 6150 3350
+Wire Wire Line
+	6150 3350 6150 3275
+Connection ~ 6150 3350
+Wire Wire Line
+	6150 3750 6300 3750
+Wire Wire Line
+	6600 3750 7000 3750
+$Comp
+L Device:C C7
+U 1 1 5FE81A0F
+P 6450 3750
+F 0 "C7" V 6610 3750 50  0000 C CNN
+F 1 "0.1uF" V 6701 3750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 3600 50  0001 C CNN
+F 3 "~" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	0    1    1    0   
+$EndComp
+Connection ~ 6150 3750
+Wire Wire Line
+	6150 3550 6150 3750
+Wire Wire Line
+	6300 3550 6150 3550
+Wire Wire Line
+	6150 3950 6150 3750
+$Comp
+L RainbowPlay-rescue:GNDA-power #PWR011
+U 1 1 6399014F
+P 6150 3950
+F 0 "#PWR011" H 6150 3700 50  0001 C CNN
+F 1 "GNDA" H 6155 3777 50  0000 C CNN
+F 2 "" H 6150 3950 50  0001 C CNN
+F 3 "" H 6150 3950 50  0001 C CNN
+	1    6150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3550 6600 3550
+$Comp
+L Device:C C6
+U 1 1 5FE811D2
+P 6450 3550
+F 0 "C6" V 6200 3550 50  0000 C CNN
+F 1 "0.1uF" V 6300 3550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 3400 50  0001 C CNN
+F 3 "~" H 6450 3550 50  0001 C CNN
+	1    6450 3550
+	0    1    1    0   
+$EndComp
+Text Label 7000 3750 2    50   ~ 0
+AUD_R-
+Text Label 7000 3550 2    50   ~ 0
+AUD_L-
+Wire Wire Line
+	6150 3350 6150 3550
+Connection ~ 6150 3550
+Wire Wire Line
+	6150 1700 5650 1700
+Connection ~ 6150 1700
+$Comp
+L RainbowPlay:AB11AH-FA S1
+U 1 1 645ADD8A
+P 14425 6050
+F 0 "S1" H 14425 6325 50  0000 C CNN
+F 1 "AB11AH-FA" H 14425 6234 50  0000 C CNN
+F 2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" H 14625 6250 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 14625 6350 60  0001 L CNN
+F 4 "CW181-ND" H 14625 6450 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 14625 6550 60  0001 L CNN "MPN"
+F 6 "Switches" H 14625 6650 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 14625 6750 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 14625 6850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 14625 6950 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 14625 7050 60  0001 L CNN "Description"
+F 11 "CW Industries" H 14625 7150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 14625 7250 60  0001 L CNN "Status"
+	1    14425 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2400 2775
+NoConn ~ 2400 2875
+NoConn ~ 2400 2975
+$Comp
+L Device:LED D13
+U 1 1 6461FF50
+P 13875 5025
+F 0 "D13" H 13868 4770 50  0000 C CNN
+F 1 "LED" H 13868 4861 50  0000 C CNN
+F 2 "" H 13875 5025 50  0001 C CNN
+F 3 "~" H 13875 5025 50  0001 C CNN
+	1    13875 5025
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q2
+U 1 1 64621041
+P 14450 5025
+F 0 "Q2" V 14611 5025 60  0000 C CNN
+F 1 "BSS138" V 14717 5025 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 14650 5225 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 14650 5325 60  0001 L CNN
+F 4 "BSS138CT-ND" H 14650 5425 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 14650 5525 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 14650 5625 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 14650 5725 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 14650 5825 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 14650 5925 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 14650 6025 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 14650 6125 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 14650 6225 60  0001 L CNN "Status"
+	1    14450 5025
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 64640841
+P 14925 5025
+F 0 "R8" V 14875 4875 50  0000 C CNN
+F 1 "200R" V 14925 5025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14855 5025 50  0001 C CNN
+F 3 "~" H 14925 5025 50  0001 C CNN
+	1    14925 5025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14250 5025 14025 5025
+$Comp
+L power:+5V #PWR013
+U 1 1 6466F069
+P 13550 4875
+F 0 "#PWR013" H 13550 4725 50  0001 C CNN
+F 1 "+5V" H 13565 5048 50  0000 C CNN
+F 2 "" H 13550 4875 50  0001 C CNN
+F 3 "" H 13550 4875 50  0001 C CNN
+	1    13550 4875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 4875 13550 5025
+Wire Wire Line
+	13550 5025 13725 5025
+$Comp
+L RainbowPlay-rescue:GND-power #PWR014
+U 1 1 64686A87
+P 15175 5150
+F 0 "#PWR014" H 15175 4900 50  0001 C CNN
+F 1 "GND" H 15180 4977 50  0001 C CNN
+F 2 "" H 15175 5150 50  0001 C CNN
+F 3 "" H 15175 5150 50  0001 C CNN
+	1    15175 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15175 5150 15175 5025
+Wire Wire Line
+	15175 5025 15075 5025
+Wire Wire Line
+	14775 5025 14650 5025
+Text Label 14225 4600 0    50   ~ 0
+PWR_LED
+Wire Wire Line
+	14225 4600 14550 4600
+Wire Wire Line
+	14550 4600 14550 4725
+Text Notes 14650 4400 2    100  ~ 0
+PWR LED
+$Comp
+L power:GND #PWR0101
+U 1 1 646F067B
+P 8525 2950
+F 0 "#PWR0101" H 8525 2700 50  0001 C CNN
+F 1 "GND" H 8530 2777 50  0000 C CNN
+F 2 "" H 8525 2950 50  0001 C CNN
+F 3 "" H 8525 2950 50  0001 C CNN
+	1    8525 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 2950 8525 2875
+Wire Wire Line
+	8525 2875 8650 2875
+Wire Wire Line
+	8650 2875 8650 2800
+Connection ~ 8650 2800
+Wire Wire Line
+	10775 2800 10775 3250
+Connection ~ 10775 3250
+Wire Wire Line
+	10775 3250 10975 3250
+Wire Wire Line
+	10775 3250 10775 3325
+Text Label 3750 3675 2    50   ~ 0
+LB
+Wire Wire Line
+	3750 3675 2900 3675
 $EndSCHEMATC

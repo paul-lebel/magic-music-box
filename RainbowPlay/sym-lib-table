@@ -152,4 +152,6 @@
   (lib (name RainbowPlay-rescue)(type Legacy)(uri ${KIPRJMOD}/RainbowPlay-rescue.lib)(options "")(descr ""))
   (lib (name RainbowPlay)(type Legacy)(uri ${KIPRJMOD}/RainbowPlay.lib)(options "")(descr ""))
   (lib (name RainbowPlay-cache)(type Legacy)(uri ${KIPRJMOD}/RainbowPlay-cache.lib)(options "")(descr ""))
+  (lib (name B3F-3152)(type Legacy)(uri ${KIPRJMOD}/B3F-3152/B3F-3152.lib)(options "")(descr ""))
+  (lib (name B3F-1052)(type Legacy)(uri ${KIPRJMOD}/B3F-1052/B3F-1052.lib)(options "")(descr ""))
 )
