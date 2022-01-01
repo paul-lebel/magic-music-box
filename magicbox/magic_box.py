@@ -13,7 +13,6 @@ Inky phat
 import RPi.GPIO as GPIO
 from typing import List
 from magic_box_screen import MagicBoxScreen
-#from consts import *
 
 
 # Set gpio pin numbering to the gpio pin numbers on the raspberry pi
@@ -37,10 +36,10 @@ class MagicBox():
         GPIO.setup(self._buttonE, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
         self._screen = MagicBoxScreen()
-        self._screen.displayMessage("Welcome to magic box!")
+        self._screen.displayMessage("Welcome!")
 
-        def importModules(self):
-            pass
+    def importModules(self):
+        pass
 
 if __name__ == "__main__":
     mb = MagicBox()

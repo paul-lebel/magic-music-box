@@ -28,6 +28,26 @@ X ~ GND@2 -200 -300 100 U 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x04_Male
 #
 DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
@@ -373,35 +393,6 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# RainbowPlay_AB11AH-FA
-#
-DEF RainbowPlay_AB11AH-FA S 0 40 Y Y 1 F N
-F0 "S" -150 150 50 H V C CNN
-F1 "RainbowPlay_AB11AH-FA" 0 -100 50 H V C CNN
-F2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" 200 200 50 H I L CNN
-F3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" 200 300 60 H I L CNN
-F4 "CW181-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "GPTS203211B" 200 500 60 H I L CNN "MPN"
-F6 "Switches" 200 600 60 H I L CNN "Category"
-F7 "Pushbutton Switches" 200 700 60 H I L CNN "Family"
-F8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "SWITCH PUSHBUTTON SPST 1A 30V" 200 1000 60 H I L CNN "Description"
-F11 "CW Industries" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-C -60 0 10 0 1 0 N
-C 60 0 10 0 1 0 N
-P 2 0 1 0 -100 0 -70 0 N
-P 2 0 1 0 -70 50 70 50 N
-P 2 0 1 0 -40 110 40 110 N
-P 2 0 1 0 0 50 0 110 N
-P 2 0 1 0 100 0 70 0 N
-X ~ 1 -200 0 100 R 50 50 1 1 P
-X ~ 3 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # RainbowPlay_TPA2001D2
 #
 DEF RainbowPlay_TPA2001D2 U 0 40 Y Y 1 F N
@@ -437,6 +428,65 @@ X AGND 6 -550 50 100 R 50 50 1 1 W
 X COSC 7 -550 -100 100 R 50 50 1 1 P
 X RINN 8 -550 -250 100 R 50 50 1 1 I
 X PV_DD 9 -550 -400 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_SPST
+#
+DEF Switch_SW_SPST SW 0 0 Y N 1 F N
+F0 "SW" 0 125 50 H V C CNN
+F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+P 2 0 0 0 -60 10 60 70 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Diodes-Rectifiers-Single_1N5819HW-7-F
+#
+DEF dk_Diodes-Rectifiers-Single_1N5819HW-7-F D 0 40 Y Y 1 F N
+F0 "D" 0 150 50 H V C CNN
+F1 "dk_Diodes-Rectifiers-Single_1N5819HW-7-F" 50 -100 50 H V C CNN
+F2 "digikey-footprints:SOD-123" 200 200 60 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/ds30217.pdf" 200 300 60 H I L CNN
+F4 "1N5819HW-FDICT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "1N5819HW-7-F" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Diodes - Rectifiers - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.diodes.com/assets/Datasheets/ds30217.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/diodes-incorporated/1N5819HW-7-F/1N5819HW-FDICT-ND/815283" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "DIODE SCHOTTKY 40V 1A SOD123" 200 1000 60 H I L CNN "Description"
+F11 "Diodes Incorporated" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 0 0 100 0 N
+P 2 0 1 0 0 50 0 -50 N
+P 4 0 1 0 100 50 100 -50 0 0 100 50 F
+X ~ A 200 0 100 L 50 50 1 1 P
+X ~ K -100 0 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Logic-Gates-and-Inverters_SN74LVC1G32DBVRG4
+#
+DEF dk_Logic-Gates-and-Inverters_SN74LVC1G32DBVRG4 U 0 40 Y Y 1 F N
+F0 "U" 250 -500 50 H V C CNN
+F1 "dk_Logic-Gates-and-Inverters_SN74LVC1G32DBVRG4" 600 -400 50 H V C CNN
+F2 "" -250 0 50 H I C CNN
+F3 "" -250 0 50 H I C CNN
+DRAW
+A -550 0 361 -337 337 0 1 0 N -250 -200 -250 200
+P 5 0 1 0 -250 200 150 200 350 0 150 -200 -250 -200 N
+X A 1 -300 100 100 R 50 50 1 1 I
+X B 2 -300 -100 100 R 50 50 1 1 I
+X GND 3 0 -300 100 U 50 50 1 1 W
+X Y 4 450 0 100 L 50 50 1 1 O
+X Vcc 5 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #

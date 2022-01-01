@@ -5,10 +5,10 @@ Paul Lebel
 2021
 '''
 
-import abc
+from abc import ABC
 
 # Methods
-class MagicBoxModule(abc.ABC):
+class MagicBoxModule(ABC):
     @abc.abstractmethod
     def __init__():
         pass
