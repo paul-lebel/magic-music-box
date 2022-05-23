@@ -105,69 +105,6 @@ X Pin_6 6 200 -300 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_02x12_Odd_Even
-#
-DEF Connector_Generic_Conn_02x12_Odd_Even J 0 40 Y N 1 F N
-F0 "J" 50 600 50 H V C CNN
-F1 "Connector_Generic_Conn_02x12_Odd_Even" 50 -700 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_2x??_*
-$ENDFPLIST
-DRAW
-S -50 -595 0 -605 1 1 6 N
-S -50 -495 0 -505 1 1 6 N
-S -50 -395 0 -405 1 1 6 N
-S -50 -295 0 -305 1 1 6 N
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 305 0 295 1 1 6 N
-S -50 405 0 395 1 1 6 N
-S -50 505 0 495 1 1 6 N
-S -50 550 150 -650 1 1 10 f
-S 150 -595 100 -605 1 1 6 N
-S 150 -495 100 -505 1 1 6 N
-S 150 -395 100 -405 1 1 6 N
-S 150 -295 100 -305 1 1 6 N
-S 150 -195 100 -205 1 1 6 N
-S 150 -95 100 -105 1 1 6 N
-S 150 5 100 -5 1 1 6 N
-S 150 105 100 95 1 1 6 N
-S 150 205 100 195 1 1 6 N
-S 150 305 100 295 1 1 6 N
-S 150 405 100 395 1 1 6 N
-S 150 505 100 495 1 1 6 N
-X Pin_1 1 -200 500 150 R 50 50 1 1 P
-X Pin_10 10 300 100 150 L 50 50 1 1 P
-X Pin_11 11 -200 0 150 R 50 50 1 1 P
-X Pin_12 12 300 0 150 L 50 50 1 1 P
-X Pin_13 13 -200 -100 150 R 50 50 1 1 P
-X Pin_14 14 300 -100 150 L 50 50 1 1 P
-X Pin_15 15 -200 -200 150 R 50 50 1 1 P
-X Pin_16 16 300 -200 150 L 50 50 1 1 P
-X Pin_17 17 -200 -300 150 R 50 50 1 1 P
-X Pin_18 18 300 -300 150 L 50 50 1 1 P
-X Pin_19 19 -200 -400 150 R 50 50 1 1 P
-X Pin_2 2 300 500 150 L 50 50 1 1 P
-X Pin_20 20 300 -400 150 L 50 50 1 1 P
-X Pin_21 21 -200 -500 150 R 50 50 1 1 P
-X Pin_22 22 300 -500 150 L 50 50 1 1 P
-X Pin_23 23 -200 -600 150 R 50 50 1 1 P
-X Pin_24 24 300 -600 150 L 50 50 1 1 P
-X Pin_3 3 -200 400 150 R 50 50 1 1 P
-X Pin_4 4 300 400 150 L 50 50 1 1 P
-X Pin_5 5 -200 300 150 R 50 50 1 1 P
-X Pin_6 6 300 300 150 L 50 50 1 1 P
-X Pin_7 7 -200 200 150 R 50 50 1 1 P
-X Pin_8 8 300 200 150 L 50 50 1 1 P
-X Pin_9 9 -200 100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -493,22 +430,6 @@ X PV_DD 9 -550 -400 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_SPST
-#
-DEF Switch_SW_SPST SW 0 0 Y N 1 F N
-F0 "SW" 0 125 50 H V C CNN
-F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-P 2 0 0 0 -60 10 60 70 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X B 2 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # dk_Diodes-Rectifiers-Single_1N5819HW-7-F
 #
 DEF dk_Diodes-Rectifiers-Single_1N5819HW-7-F D 0 40 Y Y 1 F N
@@ -534,6 +455,36 @@ X ~ K -100 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR
+#
+DEF dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR U 0 0 Y Y 1 F N
+F0 "U" -100 140 60 H V R CNN
+F1 "dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR" -20 -150 60 H V L CNN
+F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" 200 300 60 H I L CNN
+F4 "296-11607-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "SN74LVC1G14DBVR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Logic - Gates and Inverters" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/SN74LVC1G14DBVR/296-11607-1-ND/385746" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC INVERTER SCHMITT 1CH SOT23-5" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 10 0 10 0 1 0 N
+S -200 100 100 -100 0 1 0 f
+P 2 0 1 0 -100 0 -200 0 N
+P 2 0 1 0 100 0 20 0 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 N
+X NC 1 -100 0 100 R 50 50 1 1 N N
+X A 2 -300 0 100 R 50 50 1 1 I
+X GND 3 -100 -200 100 U 50 50 1 1 W
+X Y 4 200 0 100 L 50 50 1 1 O
+X VCC 5 0 200 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # dk_Logic-Gates-and-Inverters_SN74LVC1G32DBVRG4
 #
 DEF dk_Logic-Gates-and-Inverters_SN74LVC1G32DBVRG4 U 0 40 Y Y 1 F N
@@ -549,6 +500,35 @@ X B 2 -300 -100 100 R 50 50 1 1 I
 X GND 3 0 -300 100 U 50 50 1 1 W
 X Y 4 450 0 100 L 50 50 1 1 O
 X Vcc 5 0 300 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Pushbutton-Switches_GPTS203211B
+#
+DEF dk_Pushbutton-Switches_GPTS203211B S 0 40 Y Y 1 F N
+F0 "S" -150 150 50 H V C CNN
+F1 "dk_Pushbutton-Switches_GPTS203211B" 0 -100 50 H V C CNN
+F2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" 200 200 50 H I L CNN
+F3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" 200 300 60 H I L CNN
+F4 "CW181-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "GPTS203211B" 200 500 60 H I L CNN "MPN"
+F6 "Switches" 200 600 60 H I L CNN "Category"
+F7 "Pushbutton Switches" 200 700 60 H I L CNN "Family"
+F8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SWITCH PUSHBUTTON SPST 1A 30V" 200 1000 60 H I L CNN "Description"
+F11 "CW Industries" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -60 0 10 0 1 0 N
+C 60 0 10 0 1 0 N
+P 2 0 1 0 -100 0 -70 0 N
+P 2 0 1 0 -70 50 70 50 N
+P 2 0 1 0 -40 110 40 110 N
+P 2 0 1 0 0 50 0 110 N
+P 2 0 1 0 100 0 70 0 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
