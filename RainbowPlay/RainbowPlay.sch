@@ -2270,7 +2270,7 @@ Text Notes 500  2025 0    50   ~ 0
 Stemma
 Text Notes 500  1925 0    50   ~ 0
 Stemma
-Text Notes 750  1325 0    50   ~ 0
+Text Notes 825  1325 0    50   ~ 0
 WAKE_ON_GPIO only pulled to ground when Pi is off to not interfere with I2C
 Text Notes 500  2825 0    50   ~ 0
 Free
