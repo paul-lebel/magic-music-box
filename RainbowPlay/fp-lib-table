@@ -138,4 +138,5 @@
   (lib (name "B3F-1052")(type "KiCad")(uri "${KIPRJMOD}/B3F-1052")(options "")(descr ""))
   (lib (name "B3F-4050")(type "KiCad")(uri "${KIPRJMOD}/B3F-4050")(options "")(descr ""))
   (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+  (lib (name "UE27AC54100")(type "KiCad")(uri "/Users/Paul/Downloads/UE27AC54100")(options "")(descr ""))
 )

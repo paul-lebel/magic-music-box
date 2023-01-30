@@ -11,6 +11,7 @@ ser = serial.Serial(
 )
 msg = ""
 i = 0
+
 while True:
     i+=1
     print("Counter {} - Hello from Raspberry Pi".format(i))
