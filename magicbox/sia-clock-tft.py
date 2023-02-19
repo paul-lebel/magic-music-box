@@ -138,7 +138,7 @@ def main():
             image = Image.new('RGB', (display.width, display.height))
             draw = ImageDraw.Draw(image)
             draw.rectangle((0, 0, display.width, display.height), outline=0, fill=(0, 0, 0))
-            display.image(image)
+            # display.image(image)
 
             # Write text with weather values to the canvas
             date = time.strftime("%m/%d")
@@ -153,7 +153,7 @@ def main():
 
             else:
                 # Night time is 7:30pm to 7am
-                time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
+                time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 18.5) ) else (255,0,0) 
 
             draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
             draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
