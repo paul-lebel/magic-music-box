@@ -28,6 +28,7 @@ COUNTRYCODE = "US"
 WARNING_TEMP = 30.0
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BAUDRATE = 64000000  # The pi can be very fast!
+DT_UPDATE_WEATHER = 60
 
 CLOCK_FONT = ImageFont.truetype(FredokaOne, 50)
 FONT = ImageFont.truetype(FredokaOne, 25)
@@ -62,6 +63,8 @@ class Display(st7789.ST7789):
         self.buttonB = digitalio.DigitalInOut(board.D24)
         self.buttonA.switch_to_input()
         self.buttonB.switch_to_input()
+        self.buttonA.pull = digitalio.Pull.UP
+        self.buttonB.pull = digitalio.Pull.UP
 
 
 # Convert a city name and country code to latitude and longitude
@@ -97,13 +100,14 @@ def main():
 
     display = Display()
 
+    location_string = "{city}, {countrycode}".format(city=CITY, countrycode=COUNTRYCODE)
+
+    # Turn on backlight
+    display.backlight.value = True
+
     # Dictionaries to store our icons and icon masks in
     icons = {}
     masks = {}
-
-    # Get the weather data for the given location
-    location_string = "{city}, {countrycode}".format(city=CITY, countrycode=COUNTRYCODE)
-    weather = get_weather(location_string)
 
     # This maps the weather code from Open Meteo
     # to the appropriate weather icons
@@ -117,23 +121,49 @@ def main():
         "wind": []
     } 
 
-    if weather:
-        temperature = weather["temperature"]
-        windspeed = weather["windspeed"]
-        weathercode = weather["weathercode"]
-
-        for icon in icon_map:
-            if weathercode in icon_map[icon]:
-                weather_icon = icon
-                break
-    else:
-        print("Warning, no weather information found!")
-        windspeed = 0.0
-        temperature = 0.0
-        weather_icon = None
+    t_weather = time.perf_counter()
+    prev_btnA_value = 1
 
     try: 
         while True:
+
+            # Toggle backlight
+            btnA_value = display.buttonA.value
+
+            if btnA_value != prev_btnA_value:
+                if display.backlight.value:
+                    display.backlight.value = 0
+                else:
+                    display.backlight.value = 1
+
+            prev_btnA_value = btnA_value
+
+
+            # Get the weather data for the given location
+            if (time.perf_counter() - t_weather) > DT_UPDATE_WEATHER
+                try:
+                    weather = get_weather(location_string)
+                except:
+                    weather = None
+                    pass
+
+            if weather:
+                temperature = weather["temperature"]
+                windspeed = weather["windspeed"]
+                weathercode = weather["weathercode"]
+
+                for icon in icon_map:
+                    if weathercode in icon_map[icon]:
+                        weather_icon = icon
+                        break
+            
+            else:
+                print("Warning, no weather information found!")
+                windspeed = 0.0
+                temperature = 0.0
+                weather_icon = None
+
+
             # Create a new canvas to draw on
             image = Image.new('RGB', (display.width, display.height))
             draw = ImageDraw.Draw(image)
@@ -142,7 +172,7 @@ def main():
 
             # Write text with weather values to the canvas
             date = time.strftime("%m/%d")
-            time_for_clock = time.strftime("%I:%M %p")
+            time_for_clock = time.strftime("%I-:%M %p")
             hour = int(time.strftime("%H"))
             minute = int(time.strftime("%M"))
             day = time.strftime("%A")
@@ -161,6 +191,7 @@ def main():
             draw.text((0, 180), "Wind: {0:.1f}mph".format(kmh_to_mph(windspeed), (255,255,255) , font=FONT), (255,255,255), font=FONT)
 
             display.image(image, 180)
+
 
 
     except KeyboardInterrupt:
