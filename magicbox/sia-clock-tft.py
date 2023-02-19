@@ -129,13 +129,13 @@ def main():
     try: 
         while True:
 
-            # Toggle backlight
+            # Toggle backlight only if it's a falling edge
             btnA_value = display.buttonA.value
 
-            if btnA_value != prev_btnA_value:
+            if prev_btnA_value and (not btnA_value):
                 if display.backlight.value:
                     display.backlight.value = 0
-                else:
+                elif display.backlight.value == 0:
                     display.backlight.value = 1
 
             prev_btnA_value = btnA_value
