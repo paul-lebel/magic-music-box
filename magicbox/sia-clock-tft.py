@@ -29,8 +29,8 @@ WARNING_TEMP = 30.0
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BAUDRATE = 64000000  # The pi can be very fast!
 
-CLOCK_FONT = ImageFont.truetype(FredokaOne, 60)
-FONT = ImageFont.truetype(FredokaOne, 30)
+CLOCK_FONT = ImageFont.truetype(FredokaOne, 50)
+FONT = ImageFont.truetype(FredokaOne, 25)
 
 
 class Display(st7789.ST7789):
@@ -154,10 +154,10 @@ def main():
         # Night time is 7:30pm to 7am
         time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
 
-    draw.text((25, 25), time_for_clock, time_color, font=CLOCK_FONT)
-    draw.text((15, 120), "Date: " + date, (255, 255, 255), font=FONT)
-    draw.text((15, 150), "Temperature: {0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=FONT)
-    draw.text((15, 180), "Wind: {0:.1f}km/h".format(kmh_to_mph(windspeed), (255,255,255) , font=FONT), (255,255,255), font=FONT)
+    draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
+    draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
+    draw.text((0, 150), "Temperature: {0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=FONT)
+    draw.text((0, 180), "Wind: {0:.1f}km/h".format(kmh_to_mph(windspeed), (255,255,255) , font=FONT), (255,255,255), font=FONT)
 
     display.image(image)
 
