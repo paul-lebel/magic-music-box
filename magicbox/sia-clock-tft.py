@@ -130,7 +130,7 @@ def main():
 
     # Create a new canvas to draw on
     image = Image.new('RGB', (display.width, display.height))
-    draw = ImageDraw.Draw(img)
+    draw = ImageDraw.Draw(image)
     draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
     display.image(image)
 
