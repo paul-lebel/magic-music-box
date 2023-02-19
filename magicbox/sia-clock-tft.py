@@ -121,7 +121,7 @@ def main():
         "wind": []
     } 
 
-    t_weather = time.perf_counter()
+    t_weather = -DT_UPDATE_WEATHER
     prev_btnA_value = 1
 
     try: 
