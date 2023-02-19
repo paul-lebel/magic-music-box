@@ -153,7 +153,7 @@ def main():
 
             else:
                 # Night time is 7:30pm to 7am
-                time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 18.5) ) else (255,0,0) 
+                time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
 
             draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
             draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
