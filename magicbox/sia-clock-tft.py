@@ -93,7 +93,7 @@ def C_to_F(temp_C):
     return -40 + (temp_C + 40)*1.8 
 
 def kmh_to_mph(speed_kmh):
-    return speed_kmh*1.6
+    return speed_kmh/1.6
     
 
 def main():
@@ -144,7 +144,6 @@ def main():
                 try:
                     weather = get_weather(location_string)
                 except:
-                    weather = None
                     pass
 
             if weather:
@@ -172,7 +171,7 @@ def main():
 
             # Write text with weather values to the canvas
             date = time.strftime("%m/%d")
-            time_for_clock = time.strftime("%I-:%M %p")
+            time_for_clock = time.strftime("%-I:%M %p")
             hour = int(time.strftime("%H"))
             minute = int(time.strftime("%M"))
             day = time.strftime("%A")
