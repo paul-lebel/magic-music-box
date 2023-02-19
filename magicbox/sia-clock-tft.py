@@ -29,6 +29,7 @@ WARNING_TEMP = 30.0
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BAUDRATE = 64000000  # The pi can be very fast!
 DT_UPDATE_WEATHER = 60
+DT_UPDATE_TIME = 1
 
 CLOCK_FONT = ImageFont.truetype(FredokaOne, 50)
 FONT = ImageFont.truetype(FredokaOne, 25)
@@ -122,6 +123,7 @@ def main():
     } 
 
     t_weather = -DT_UPDATE_WEATHER
+    t_time = -DT_UPDATE_TIME
     prev_btnA_value = 1
 
     try: 
@@ -143,53 +145,56 @@ def main():
             if (time.perf_counter() - t_weather) > DT_UPDATE_WEATHER:
                 try:
                     weather = get_weather(location_string)
+                    t_weather = time.perf_counter()
                 except:
                     pass
 
-            if weather:
-                temperature = weather["temperature"]
-                windspeed = weather["windspeed"]
-                weathercode = weather["weathercode"]
+                if weather:
+                    temperature = weather["temperature"]
+                    windspeed = weather["windspeed"]
+                    weathercode = weather["weathercode"]
 
-                for icon in icon_map:
-                    if weathercode in icon_map[icon]:
-                        weather_icon = icon
-                        break
-            
-            else:
-                print("Warning, no weather information found!")
-                windspeed = 0.0
-                temperature = 0.0
-                weather_icon = None
+                    for icon in icon_map:
+                        if weathercode in icon_map[icon]:
+                            weather_icon = icon
+                            break
+                
+                else:
+                    print("Warning, no weather information found!")
+                    windspeed = 0.0
+                    temperature = 0.0
+                    weather_icon = None
 
+            if (time.perf_counter() - t_time) > DT_UPDATE_TIME:
+                # Create a new canvas to draw on
+                image = Image.new('RGB', (display.width, display.height))
+                draw = ImageDraw.Draw(image)
+                draw.rectangle((0, 0, display.width, display.height), outline=0, fill=(0, 0, 0))
+                # display.image(image)
 
-            # Create a new canvas to draw on
-            image = Image.new('RGB', (display.width, display.height))
-            draw = ImageDraw.Draw(image)
-            draw.rectangle((0, 0, display.width, display.height), outline=0, fill=(0, 0, 0))
-            # display.image(image)
+                # Write text with weather values to the canvas
+                date = time.strftime("%m/%d")
+                time_for_clock = time.strftime("%-I:%M %p")
+                hour = int(time.strftime("%H"))
+                minute = int(time.strftime("%M"))
+                day = time.strftime("%A")
 
-            # Write text with weather values to the canvas
-            date = time.strftime("%m/%d")
-            time_for_clock = time.strftime("%-I:%M %p")
-            hour = int(time.strftime("%H"))
-            minute = int(time.strftime("%M"))
-            day = time.strftime("%A")
+                if day in WEEKDAYS:
+                    # Night time is 7:30pm to 6:45am
+                    time_color = (255,255,255) if ( (hour > 6.75)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
 
-            if day in WEEKDAYS:
-                # Night time is 7:30pm to 6:45am
-                time_color = (255,255,255) if ( (hour > 6.75)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
+                else:
+                    # Night time is 7:30pm to 7am
+                    time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
 
-            else:
-                # Night time is 7:30pm to 7am
-                time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
+                draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
+                draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
+                draw.text((0, 150), "Temp: {0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=FONT)
+                draw.text((0, 180), "Wind: {0:.1f}mph".format(kmh_to_mph(windspeed), (255,255,255) , font=FONT), (255,255,255), font=FONT)
 
-            draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
-            draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
-            draw.text((0, 150), "Temp: {0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=FONT)
-            draw.text((0, 180), "Wind: {0:.1f}mph".format(kmh_to_mph(windspeed), (255,255,255) , font=FONT), (255,255,255), font=FONT)
+                display.image(image, 180)
+                t_time = time.perf_counter()
 
-            display.image(image, 180)
 
 
 
