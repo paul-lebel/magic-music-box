@@ -140,7 +140,7 @@ def main():
 
 
             # Get the weather data for the given location
-            if (time.perf_counter() - t_weather) > DT_UPDATE_WEATHER
+            if (time.perf_counter() - t_weather) > DT_UPDATE_WEATHER:
                 try:
                     weather = get_weather(location_string)
                 except:
