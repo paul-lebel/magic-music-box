@@ -28,6 +28,8 @@ COUNTRYCODE = "US"
 WARNING_TEMP = 30.0
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BAUDRATE = 64000000  # The pi can be very fast!
+FONT = ImageFont.truetype(FredokaOne, 22)
+
 
 class Display(st7789.ST7789):
 # Subclass to wrap buttons and backlight into same object
@@ -148,12 +150,12 @@ def main():
         # Night time is 7:30pm to 7am
         time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
 
-    draw.text((41, 12), datetime, time_color, font=font)
-    draw.text((72, 34), "T", (255,255,255) , font=font)
-    draw.text((92, 34), "{0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=font)
+    draw.text((41, 12), datetime, time_color, font=FONT)
+    draw.text((72, 34), "T", (255,255,255) , font=FONT)
+    draw.text((92, 34), "{0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=FONT)
 
-    draw.text((72, 58), "W", (255,255,255), font=font)
-    draw.text((92, 58), "{}km/h".format(kmh_to_mph(windspeed)), (255,255,255) , font=font)
+    draw.text((72, 58), "W", (255,255,255), font=FONT)
+    draw.text((92, 58), "{}km/h".format(kmh_to_mph(windspeed)), (255,255,255) , font=FONT)
 
     display.image(image)
 
