@@ -202,7 +202,7 @@ def main():
 
                 # Draw the current weather icon over the backdrop
                 if weather_icon is not None:
-                    img.paste(icons[weather_icon], (175, 120))
+                    image.paste(icons[weather_icon], (175, 120))
 
                 else:
                     draw.text((28, 36), "?", inky_display.RED, font=font)
