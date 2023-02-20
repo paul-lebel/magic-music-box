@@ -158,6 +158,14 @@ def main():
                         if weathercode in icon_map[icon]:
                             weather_icon = icon
                             break
+
+                    # Load our icon files and generate masks
+                    for icon in glob.glob(os.path.join(PATH, "images/icon-*.png")):
+                        icon_name = icon.split("icon-")[1].replace(".png", "")
+                        icon_image = Image.open(icon)
+                        icons[icon_name] = icon_image
+                        # Don't need masks with RGB color display
+                        # masks[icon_name] = create_mask(icon_image)
                 
                 else:
                     print("Warning, no weather information found!")
@@ -192,22 +200,20 @@ def main():
                 draw.text((0, 150), "Temp: {0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=FONT)
                 draw.text((0, 180), "Wind: {0:.1f}mph".format(kmh_to_mph(windspeed), (255,255,255) , font=FONT), (255,255,255), font=FONT)
 
+                # Draw the current weather icon over the backdrop
+                if weather_icon is not None:
+                    img.paste(icons[weather_icon], (175, 120))
+
+                else:
+                    draw.text((28, 36), "?", inky_display.RED, font=font)
+
+
                 display.image(image, 180)
                 t_time = time.perf_counter()
 
 
-
-
     except KeyboardInterrupt:
         pass
-
-    # # Draw the current weather icon over the backdrop
-    # if weather_icon is not None:
-    #     img.paste(icons[weather_icon], (28, 36), masks[weather_icon])
-
-    # else:
-    #     draw.text((28, 36), "?", inky_display.RED, font=font)
-
   
 
 if __name__ == "__main__":
