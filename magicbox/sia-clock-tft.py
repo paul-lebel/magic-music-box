@@ -201,11 +201,9 @@ def main():
                 else:
                     temperature_color = (255, 255, 255)
 
-
-
                 draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
                 draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
-                draw.text((0, 150), "Temp: {0:.1f}°F".format(temperature), (255,255,255), temperature_color, font=FONT)
+                draw.text((0, 150), "Temp: {0:.1f}°F".format(temperature), temperature_color, font=FONT)
                 draw.text((0, 180), "Wind: {0:.1f}mph".format(windspeed), (255,255,255), font=FONT)
 
                 # Draw the current weather icon over the backdrop
