@@ -25,7 +25,6 @@ PATH = os.path.dirname(__file__)
 # Details to customise the weather display
 CITY = "Redwood City"
 COUNTRYCODE = "US"
-WARNING_TEMP = 30.0
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BAUDRATE = 64000000  # The pi can be very fast!
 DT_UPDATE_WEATHER = 60
@@ -150,8 +149,8 @@ def main():
                     pass
 
                 if weather:
-                    temperature = weather["temperature"]
-                    windspeed = weather["windspeed"]
+                    temperature = C_to_F(weather["temperature"])
+                    windspeed = kmh_to_mph(weather["windspeed"])
                     weathercode = weather["weathercode"]
 
                     for icon in icon_map:
@@ -195,14 +194,23 @@ def main():
                     # Night time is 7:30pm to 7am
                     time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
 
+                if temperature > 85:
+                    temperature_color = (255, 0, 0)
+                elif temperature < 40:
+                    temperature_color = (0, 0, 255)
+                else:
+                    temperature_color = (255, 255, 255)
+
+
+
                 draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
                 draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
-                draw.text((0, 150), "Temp: {0:.1f}°F".format(C_to_F(temperature)), (255,255,255)  if temperature < WARNING_TEMP else (255,0,0) , font=FONT)
-                draw.text((0, 180), "Wind: {0:.1f}mph".format(kmh_to_mph(windspeed), (255,255,255) , font=FONT), (255,255,255), font=FONT)
+                draw.text((0, 150), "Temp: {0:.1f}°F".format(temperature), (255,255,255), temperature_color, font=FONT)
+                draw.text((0, 180), "Wind: {0:.1f}mph".format(windspeed), (255,255,255), font=FONT)
 
                 # Draw the current weather icon over the backdrop
                 if weather_icon is not None:
-                    image.paste(icons["storm"], (165, 130))
+                    image.paste(icons[weather_icon], (165, 130))
 
                 else:
                     draw.text((28, 36), "?", inky_display.RED, font=font)
