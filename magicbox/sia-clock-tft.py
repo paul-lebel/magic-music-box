@@ -188,7 +188,7 @@ def main():
 
                 if day in WEEKDAYS:
                     # Night time is 7:30pm to 6:45am
-                    time_color = (255,255,255) if ( (hour > 6.75)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
+                    time_color = (255,255,255) if (((hour+minute/60) > 6.75) and ((hour + minute/60) < 19.5)) else (255,0,0) 
 
                 else:
                     # Night time is 7:30pm to 7am
