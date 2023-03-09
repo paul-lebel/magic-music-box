@@ -29,6 +29,10 @@ WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BAUDRATE = 64000000  # The pi can be very fast!
 DT_UPDATE_WEATHER = 60
 DT_UPDATE_TIME = 1
+RED = (255, 0, 0)
+WHITE = (255,255,255)
+ORANGE = (255, 165, 0)
+BLUE = (0,0,255)
 
 CLOCK_FONT = ImageFont.truetype(FredokaOne, 50)
 FONT = ImageFont.truetype(FredokaOne, 25)
@@ -108,6 +112,7 @@ def main():
     # Dictionaries to store our icons and icon masks in
     icons = {}
     masks = {}
+    weather = None
 
     # This maps the weather code from Open Meteo
     # to the appropriate weather icons
@@ -167,7 +172,6 @@ def main():
                         # masks[icon_name] = create_mask(icon_image)
                 
                 else:
-                    print("Warning, no weather information found!")
                     windspeed = 0.0
                     temperature = 0.0
                     weather_icon = None
@@ -186,13 +190,23 @@ def main():
                 minute = int(time.strftime("%M"))
                 day = time.strftime("%A")
 
+                time_decimal = (hour + minute/60)
+
                 if day in WEEKDAYS:
-                    # Night time is 7:30pm to 6:45am
-                    time_color = (255,255,255) if (((hour+minute/60) > 6.75) and ((hour + minute/60) < 19.5)) else (255,0,0) 
+                    if (time_decimal < 6.75) or (time_decimal > 19.75):
+                        time_color = RED
+                    elif time_decimal > 7.25:
+                        time_color = ORANGE
+                    else:
+                        time_color = WHITE
 
                 else:
-                    # Night time is 7:30pm to 7am
-                    time_color = (255,255,255) if ( (hour > 7)  and ((hour + minute/60) < 19.5) ) else (255,0,0) 
+                    if (time_decimal < 7) or (time_decimal > 20):
+                        time_color = RED
+                    elif time_decimal > 7.5:
+                        time_color = ORANGE
+                    else:
+                        time_color = WHITE
 
                 if temperature > 85:
                     temperature_color = (255, 0, 0)
@@ -209,10 +223,6 @@ def main():
                 # Draw the current weather icon over the backdrop
                 if weather_icon is not None:
                     image.paste(icons[weather_icon], (165, 130))
-
-                else:
-                    draw.text((28, 36), "?", inky_display.RED, font=font)
-
 
                 display.image(image, 180)
                 t_time = time.perf_counter()
