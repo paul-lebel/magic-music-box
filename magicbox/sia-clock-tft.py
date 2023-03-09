@@ -195,7 +195,7 @@ def main():
                 if day in WEEKDAYS:
                     if (time_decimal < 6.75) or (time_decimal > 19.75):
                         time_color = RED
-                    elif time_decimal > 7.25:
+                    elif time_decimal >= 19.25:
                         time_color = ORANGE
                     else:
                         time_color = WHITE
@@ -203,7 +203,7 @@ def main():
                 else:
                     if (time_decimal < 7) or (time_decimal > 20):
                         time_color = RED
-                    elif time_decimal > 7.5:
+                    elif time_decimal >= 19.5:
                         time_color = ORANGE
                     else:
                         time_color = WHITE
