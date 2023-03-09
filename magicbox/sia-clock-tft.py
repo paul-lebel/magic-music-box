@@ -147,6 +147,7 @@ def main():
 
             # Get the weather data for the given location
             if (time.perf_counter() - t_weather) > DT_UPDATE_WEATHER:
+                print("Time to check the weather...")
                 try:
                     weather = get_weather(location_string)
                     t_weather = time.perf_counter()
@@ -177,6 +178,7 @@ def main():
                     weather_icon = None
 
             if (time.perf_counter() - t_time) > DT_UPDATE_TIME:
+
                 # Create a new canvas to draw on
                 image = Image.new('RGB', (display.width, display.height))
                 draw = ImageDraw.Draw(image)
@@ -229,7 +231,6 @@ def main():
 
                 display.image(image, 180)
                 t_time = time.perf_counter()
-                print(f"Loop time: {t_time} s")
 
 
     except KeyboardInterrupt:
