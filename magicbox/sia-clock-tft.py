@@ -193,6 +193,7 @@ def main():
                 time_decimal = (hour + minute/60)
 
                 if day in WEEKDAYS:
+                    print("It's a weekday!")
                     if (time_decimal < 6.75) or (time_decimal > 19.75):
                         time_color = RED
                     elif time_decimal >= 19.25:
@@ -201,6 +202,7 @@ def main():
                         time_color = WHITE
 
                 else:
+                    print("It's the weekend!")
                     if (time_decimal < 7) or (time_decimal > 20):
                         time_color = RED
                     elif time_decimal >= 19.5:
@@ -215,6 +217,7 @@ def main():
                 else:
                     temperature_color = (255, 255, 255)
 
+                print(time_color)
                 draw.text((0, 25), time_for_clock, time_color, font=CLOCK_FONT)
                 draw.text((0, 120), "Date: " + date, (255, 255, 255), font=FONT)
                 draw.text((0, 150), "Temp: {0:.1f}°F".format(temperature), temperature_color, font=FONT)
