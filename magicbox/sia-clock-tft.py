@@ -226,6 +226,7 @@ def main():
 
                 display.image(image, 180)
                 t_time = time.perf_counter()
+                print(f"Loop time: {t_time} s")
 
 
     except KeyboardInterrupt:
