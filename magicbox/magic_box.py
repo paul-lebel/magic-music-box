@@ -3,7 +3,6 @@
 
 -- Important Links --
 
-Inky phat
 
 -- Application Notes --
 
@@ -11,24 +10,38 @@ Inky phat
 """
 
 import RPi.GPIO as GPIO
-from typing import List
-from magic_box_screen import MagicBoxScreen
+from magicbox.box_constants import * 
+from transitions.instrument import ThreadedInstrument
+from transitions.decorators import lock_no_block
+from box_sm import *
+
+import threading, queue
+import time
+import enum
+import sys
 
 
-# Set gpio pin numbering to the gpio pin numbers on the raspberry pi
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
 
 class MagicBox():
     def __init__(self):
-        # BCM GPIO
-        self._buttonA = 0
-        self._buttonB = 5
-        self._buttonC = 6
-        self._buttonD = 23
-        self._buttonE = 24
 
-        # Raspberry Pi GPIO inputs are all either pull-up or pull-down. 
+        super().__init__(self, \
+            states = States, \
+            transitions=SM_TRANSITIONS, \
+            initial=States.MAIN_MENU, \
+            ignore_invalid_triggers = True, \
+            after_state_change = self.print_state, \
+            auto_transitions = False, \
+            name='Magic Music Box')
+        
+        # Create threaded queues for operations that block execution
+        self._queues = {'keyInput': {'q': queue.Queue(maxsize=3), 'func': self._parse_key_input}}
+        
+        self.get_graph().draw('magic_box_diagram.png', prog='dot')
+
+        # Set gpio pin numbering to the gpio pin numbers on the raspberry pi
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setwarnings(False)
         GPIO.setup(self._buttonA, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         GPIO.setup(self._buttonB, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         GPIO.setup(self._buttonC, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -38,8 +51,11 @@ class MagicBox():
         self._screen = MagicBoxScreen()
         self._screen.displayMessage("Welcome!")
 
-    def importModules(self):
-        pass
+
+    def start_key_input(self):
+        self._queues['keyInput']['q'].put_nowait({'prompt': 'Enter an input:'})
+        return
+
 
 if __name__ == "__main__":
     mb = MagicBox()
