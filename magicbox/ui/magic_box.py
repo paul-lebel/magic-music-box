@@ -10,16 +10,16 @@
 """
 
 import RPi.GPIO as GPIO
-from magicbox.box_constants import * 
+from magicbox.hardware.constants import * 
+from magicbox.hardware.box import Box
 from transitions.instrument import ThreadedInstrument
 from transitions.decorators import lock_no_block
-from box_sm import *
+from magic_box_sm import SM_TRANSITIONS, LOCKS
 
 import threading, queue
 import time
 import enum
 import sys
-
 
 
 class MagicBox():
@@ -56,6 +56,14 @@ class MagicBox():
         self._queues['keyInput']['q'].put_nowait({'prompt': 'Enter an input:'})
         return
 
+    @lock_no_block(DISPLAY_LOCK)
+    def _update_display(self):
+        '''
+        Performs a dummy update
+        '''
+        print('Updating display')
+        time.sleep(5)
+        pass
 
 if __name__ == "__main__":
     mb = MagicBox()
