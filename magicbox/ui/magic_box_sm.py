@@ -14,12 +14,12 @@ class States(enum.Enum):
 # For readability, organize state transitions by the source state
 leaving = dict()
 leaving["MAIN_MENU"] = [
-    { 'trigger': 'bottom', 'source': States.MAIN_MENU, 'dest': States.CALIBRATION_MENU}
+    { 'trigger': 'encoder_up', 'source': States.MAIN_MENU, 'dest': States.CALENDAR}
     ]
 
 
-leaving["MEASUREMENT_MENU"] = [
-    { 'trigger': 'bottom', 'source': States.MEASUREMENT_MENU, 'dest': States.MAIN_MENU}
+leaving["CALENDAR"] = [
+    { 'trigger': 'encoder_down', 'source': States.CALENDAR, 'dest': States.MAIN_MENU}
     ]
 
 

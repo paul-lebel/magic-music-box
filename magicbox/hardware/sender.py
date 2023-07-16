@@ -1,4 +1,3 @@
-# sender.py
 import time
 import serial
 ser = serial.Serial(
